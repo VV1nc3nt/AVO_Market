@@ -689,6 +689,73 @@
   border-radius: 100px;  
 }
 
+/* ===============CATALOG================ */
+
+.catalog {
+  width: 1392px;
+  margin: 0 auto;
+}
+
+.catalog_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.catalog_card {
+  width: 448px;
+  border-radius: 11px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.catalog_left {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.first_card {
+  background: linear-gradient(104.22deg, #FFA500 0%, rgba(255, 165, 0, 0.75) 42.16%, rgba(255, 165, 0, 0.5) 75.93%), #C4C4C4;
+}
+
+.second_card {
+  background: linear-gradient(104.22deg, #95B5D7 0%, rgba(149, 181, 215, 0.93) 42.16%, rgba(149, 181, 215, 0.46) 75.93%), #C4C4C4;
+}
+
+.third_card {
+  background: linear-gradient(104.68deg, #8CD0D6 0%, rgba(140, 208, 214, 0.75) 55.53%, rgba(140, 208, 214, 0.5) 100%), #C4C4C4;
+}
+
+.catalog_text_container + .btn_white {
+  padding: 12px 30px;
+}
+
+.catalog_title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  font-style: normal;
+  line-height: 24px;
+  color: #374957;
+}
+
+.catalog_desc {
+  width: 202px;
+  margin-top: 8px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+  color: #ffffff;
+}
+
 /* ++++++++===========FOOTER=============+++++++++ */
 
 .footer {
