@@ -930,6 +930,67 @@
   margin-left: -135px;
 }
 
+/* ==============NEWS============= */
+
+.news {
+  width: 1392px;
+  margin: 0 auto;
+}
+
+.news_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.news_card {
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+}
+
+.news_date {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 16px;
+  color: #BABEC1;
+  margin-bottom: 16px;
+}
+
+.news_title {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 16px;
+  color: #374957;
+  margin-bottom: 16px;
+}
+
+.news_img {
+  border-radius: 11px;
+  margin-bottom: 16px;
+}
+
+.news_desc {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 24px;
+  color: #374957;
+}
+
+/* ===========BRANDS============ */
+
+.brands {
+  width: 1392px;
+  margin: 0 auto;
+}
+
 /* ++++++++===========FOOTER=============+++++++++ */
 
 .footer {
