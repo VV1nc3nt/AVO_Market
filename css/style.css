@@ -756,6 +756,180 @@
   color: #ffffff;
 }
 
+/* ===========POPULAR_CATEGORIES=========== */
+
+.popular_categories {
+  width: 1392px;
+  margin: 0 auto;
+}
+
+.popular_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.popular_link {
+  display: block;
+  text-decoration: none;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 11px;
+  width: 192px;
+  height: 192px;
+  overflow: hidden;
+}
+
+.popular_category {
+  display: block;
+  padding: 24px;
+
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 16px;
+  color: #374957;
+}
+
+.popular_img {
+  margin-left: 65px;
+}
+
+/* ==========PROMOTION========== */
+
+.promotion {
+  width: 1392px;
+  margin: 112px auto 0;
+  background-image: url('../images/promotion_background.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 32px;
+  border-radius: 11px;
+}
+
+.promotion_header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  font-style: normal;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.promotion_text_container > .btn_white {
+  width: 252px;
+  padding: 12px 56px;
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
+
+.promotion_text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  color: #ffffff;
+
+  width: 504px;
+  margin-top: 16px;
+}
+
+.promotion_date {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.promotion_right {
+  background-image: url(../images/promotion_bg.png);
+  padding: 120px;
+}
+
+/* =============BIG_PROMOTION============ */
+
+.big_promotion {
+  background-image: url(../images/big_promotion_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1392px;
+  margin: 112px auto;
+  border-radius: 11px;
+}
+
+.big_promotion_wrapper {
+  padding: 296px 32px 32px 1016px;
+}
+
+.big_promotion_container {
+  background-color: rgba(244, 235, 231, 0.5);
+  width: 344px;
+  padding: 32px;
+  border-radius: 11px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 24px;
+  color: #374957;
+}
+
+.big_promotion_container > .btn_orange {
+  margin-top: 24px;
+}
+
+/* ============MAILING============ */
+
+.mailing {
+  background-color: #FFA500;
+  background-size: cover;
+}
+
+.mailing_container {
+  width: 1392px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mailing_text {
+  padding: 32px 0;
+}
+
+.mailing_header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  font-style: normal;
+  line-height: 32px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.mailing_desc {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.mail_form > .search_field {
+  border: none;
+}
+
+.mail_form > .search_field + .btn_search {
+  margin-left: -135px;
+}
+
 /* ++++++++===========FOOTER=============+++++++++ */
 
 .footer {
