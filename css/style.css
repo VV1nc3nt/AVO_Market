@@ -176,8 +176,11 @@
 }
 
 .btn_menu {
+  border: none;
+  cursor: pointer;
   width: 144px;
 }
+
 .btn_burger {
   margin-right: 8px;
 }
@@ -1076,6 +1079,68 @@ input:-moz-placeholder { /* Firefox 18- */
 .brands {
   width: 1392px;
   margin: 0 auto;
+}
+
+.brands_container {
+  display: flex;
+  overflow: hidden;
+}
+
+.brand_link:nth-child(n + 2) {
+  margin-left: 32px;
+}
+
+/* ++++++=========DROPDOWN-MENU==========+++++++++ */
+
+.dropdown_menu__hidden {
+  width: 1392px;
+  margin: 0 auto;
+}
+
+.dropdown_menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu_categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_category {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  font-style: normal;
+  line-height: 17px;
+  color: #374957;
+}
+
+.menu_promotion {
+  color: #A500FF;
+}
+
+.menu_cat_point {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  font-style: normal;
+  line-height: 16px;
+  color: #374957;
+}
+
+.menu_cat_point:nth-child(n + 2) {
+  margin-top: 16px;
+}
+
+.menu_block {
+  display: flex;
+  flex-direction: column;
 }
 
 /* ++++++++===========FOOTER=============+++++++++ */
