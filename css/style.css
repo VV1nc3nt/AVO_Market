@@ -209,6 +209,7 @@
 
 .search_field {
   width: 528px;
+  height: 45px;
   border: 1px solid #FFA500;
   padding: 14px 16px;
   border-radius: 100px;
@@ -676,13 +677,16 @@ input:-moz-placeholder { /* Firefox 18- */
 }
 
 .btn_small_card {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   width: 24px;
   height: 24px;
   margin-left: 16px;
 }
 
 .btn_small_card_img {
-  padding: 4px;
+  padding: 6px;
 }
 
 .line_card {
