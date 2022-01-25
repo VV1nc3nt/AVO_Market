@@ -1850,3 +1850,54 @@ input:-moz-placeholder { /* Firefox 18- */
 .error_img {
   margin-top: 117px;
 }
+
+
+/* +++++++++++===========RETURN.HTML CSS===========+++++++++ */
+
+.return {
+  width: 1392px;
+  margin: 0 auto 112px;
+}
+
+.return > .card_title_container {
+  margin-top: 80px;
+}
+
+.return_rule:nth-child(n + 2) {
+  margin-top: 32px;
+}
+
+.rule_header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 16px;
+  color: #374957;
+  margin-bottom: 8px;
+}
+
+.rule_desc {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 24px;
+  color: #374957;
+}
+
+.rule_ul {
+  list-style: none; 
+}
+
+.rule_li {
+  display: flex;
+  align-items: center;
+}
+
+.rule_li::before {
+  content: "\2022"; 
+  color: #FFA500;
+  font-weight: bold;
+  margin-right: 8px;
+}
