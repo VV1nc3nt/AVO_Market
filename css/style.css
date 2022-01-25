@@ -1791,3 +1791,62 @@ input:-moz-placeholder { /* Firefox 18- */
   padding: 17px 67px;
   margin-top: 16px;
 }
+
+
+/* +++++++++++==============ERROR404.HTML CSS================+++++++++++++++ */
+
+.error_page {
+  background-image: url("../images/error_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.error {
+  width: 1392px;
+  margin: 80px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.error_header_text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  font-size: 56px;
+  font-style: normal;
+  line-height: 56px;
+  color: #374957;
+  
+  display: inline-block;
+  margin-right: 14px;
+}
+
+.error_text_block {
+  margin: 32px 0;
+}
+
+.error_text {
+  width: 559px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 24px;
+  color: #374957;
+}
+
+.error_link {
+  text-decoration: none;
+}
+
+.error_link_text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  font-style: normal;
+  line-height: 32px;
+  color: #374957;
+}
+
+.error_img {
+  margin-top: 117px;
+}
