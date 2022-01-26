@@ -1951,3 +1951,78 @@ input:-moz-placeholder { /* Firefox 18- */
   line-height: 24px;
   color: #374957;
 }
+
+/* +++++++++++++==================BRAND.HTML CSS===============+++++++++++++ */
+
+.brands_section {
+  width: 1392px;
+  margin: 0 auto;
+}
+
+.brands_section > .card_title_container {
+  margin-top: 80px;
+}
+
+.brand_cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.brand_card {
+  width: 336px;
+  height: 224px;
+  padding: 16px;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.07);
+  border-radius: 11px;
+}
+
+.brand_card_link {
+  text-decoration: none;
+}
+
+.brand_card_link:nth-child(4n + 2) {
+  margin: 0 16px;
+}
+
+.brand_card_link:nth-child(4n + 3) {
+  margin-right: 16px;
+}
+
+.brand_card_link:nth-child(n + 5) {
+  margin-top: 16px;
+}
+
+.brand_news {
+  margin-bottom: 112px;
+}
+
+.brands_pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.brand_pagination {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 16px;
+  color: #BABEC1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+  padding: 8px;
+  margin: 0 16px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.brand_pagination_active {
+  color: #374957;
+}
