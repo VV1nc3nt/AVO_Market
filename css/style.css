@@ -613,27 +613,140 @@ input:-moz-placeholder { /* Firefox 18- */
 
 /* =========TOP_BANNER=========== */
 
+/* ------SLIDER_TOP_BANNER------ */
+
+.main_banner_slider .slick-list {
+  overflow: hidden;
+}
+
+.main_banner_slider .slick-track{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.main_banner_slider .slick-arrow{
+  position: absolute;
+  top: 144px;
+  z-index: 20;
+  font-size: 0;
+  width: 20px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.main_banner_slider .slick-arrow.slick-prev{
+  left: 270px;
+  background: url("../svg/angle-left.svg") 0 0 no-repeat;
+}
+
+.main_banner_slider .slick-arrow.slick-next{
+  right: 270px;
+  background: url("../svg/angle-right.svg") 0 0 no-repeat;
+}
+
+/* Точки (булиты) */
+.main_banner_slider .slick-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -32px;
+}
+
+.main_banner_slider .slick-dots li{
+  list-style: none;
+  margin: 0 4px;
+}
+
+/* Элемент точки */
+.main_banner_slider .slick-dots li button{
+  font-size: 0;
+  height: 2px;
+  width: 32px;
+  border: none;
+  opacity: 0.5;
+}
+
+/* Активная точка */
+.main_banner_slider .slick-dots li.slick-active button{
+  background-color: #FFA500;
+}
+
+
+/* ------------------------------ */
+
 .top_main_banner {
-  background-image: url('../images/top_banner.png');
-  background-size: cover;
-  background-position: center center;
-  padding: 56px 0 16px;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.top_banner_img {
+  width: 100vw;
+  object-fit: cover;
+  object-position: center;
+  height: 312px;
 }
 
 .main_banner {
-  width: 1392px;
   margin: 0 auto;
   display: flex;
-}
-
-.btn_banner {
-  align-self: center;
+  position: relative;
+  width: 100vw;
 }
 
 .text_group {
-  margin: 0 760px 0 86px;
+  width: 1392px;
+  margin-top: 56px;
+  margin-left: 369px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+}
+
+@media (min-width: 3840px) and (max-width: 4100px) {
+  .main_banner_slider .slick-arrow.slick-prev{
+    left: 590px;
+  }
+  
+  .main_banner_slider .slick-arrow.slick-next{
+    right: 590px;
+  }
+
+  .text_group {
+    margin-left: 659px;
+  }
+}
+
+@media (min-width: 2450px) and (max-width: 2600px) {
+  .main_banner_slider .slick-arrow.slick-prev{
+    left: 590px;
+  }
+  
+  .main_banner_slider .slick-arrow.slick-next{
+    right: 590px;
+  }
+
+  .text_group {
+    margin-left: 659px;
+  }
+}
+
+@media (min-width: 1392px) and (max-width: 1441px){
+  .main_banner_slider .slick-arrow.slick-prev{
+    left: 20px;
+  }
+  
+  .main_banner_slider .slick-arrow.slick-next{
+    right: 20px;
+  }
+
+  .text_group {
+    margin-left: 106px;
+  }
 }
 
 .banner_span {
@@ -673,12 +786,6 @@ input:-moz-placeholder { /* Firefox 18- */
   margin-top: 32px;
 }
 
-.line_group {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 22px;
-}
-
 .btn_line {
   text-decoration: none;
 }
@@ -698,7 +805,7 @@ input:-moz-placeholder { /* Firefox 18- */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 24px auto 0;
+  margin: 40px auto 0;
 }
 
 .banner_card_frst {
@@ -863,7 +970,6 @@ input:-moz-placeholder { /* Firefox 18- */
   align-items: center;
   justify-content: space-between;
   margin-top: 112px;
-  margin-bottom: 32px;
 }
 
 .card_title_text {
@@ -891,31 +997,13 @@ input:-moz-placeholder { /* Firefox 18- */
   color: #BABEC1;
 }
 
-.btn_arrow {
-  width: 78px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.btn_arrow_svg_left {
-  text-decoration: none;
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
-  border-radius: 100px;
-  padding: 6px 10px 8px 11px;
-}
-
-.btn_arrow_svg_right {
-  text-decoration: none;
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
-  border-radius: 100px;
-  padding: 6px 11px 8px 10px;
-}
-
 .card_container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 11px;
 }
 
 .card_item {
@@ -924,8 +1012,8 @@ input:-moz-placeholder { /* Firefox 18- */
   padding: 16px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
-  border-radius: 11px;
+  justify-content: space-between;
+  
 }
 
 .small_span {
@@ -971,7 +1059,6 @@ input:-moz-placeholder { /* Firefox 18- */
   display: flex;
   position: absolute;
   right: 0;
-  /* margin-left: -55px; */
 }
 
 .btn_small_card {
@@ -985,18 +1072,6 @@ input:-moz-placeholder { /* Firefox 18- */
 
 .btn_small_card_img {
   padding: 6px;
-}
-
-.line_card {
-  margin: 0 auto 24px;
-}
-
-.line_card > .btn_line > svg {
-  fill: rgba(86, 86, 86, 0.07);
-}
-
-.line_card > .btn_line_active > svg {
-  fill: #FFA500;
 }
 
 .card_desc {
@@ -1049,6 +1124,48 @@ input:-moz-placeholder { /* Firefox 18- */
   background-color: #FFA500;
   padding: 14px 16px;
   border-radius: 100px;  
+}
+
+/* -------------SLIDER CARDS-------------- */
+
+.card_container_slider .slick-track {
+  display: flex;
+}
+
+.card_container_slider .slick-list {
+  overflow: hidden;
+  height: 450px;
+}
+
+.card_container_slider .slick-slide {
+  height: 360px;
+  width: 272px !important;
+  margin-top: 32px;
+  margin-right: 4px;
+  margin-left: 3px;
+}
+
+.btn_arrows .slick-arrow {
+  font-size: 0;
+  border: none;
+  width: 32px;
+  height: 32px;
+  padding: 16px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+}
+
+.btn_arrows .slick-arrow.slick-prev {
+  background: url("../svg/arrow-small-left.svg") center center no-repeat;
+  width: 15px;
+  height: 15px;
+}
+
+.btn_arrows .slick-arrow.slick-arrow.slick-next {
+  background: url("../svg/arrow-small-right.svg") center center no-repeat;
+  width: 15px;
+  height: 15px;
+  margin-left: 24px;
 }
 
 /* ===============CATALOG================ */
