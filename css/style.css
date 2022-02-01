@@ -1004,6 +1004,7 @@ input:-moz-placeholder { /* Firefox 18- */
   justify-content: space-between;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
   border-radius: 11px;
+  z-index: 100;
 }
 
 .card_item {
@@ -1013,7 +1014,6 @@ input:-moz-placeholder { /* Firefox 18- */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 }
 
 .small_span {
@@ -1082,13 +1082,17 @@ input:-moz-placeholder { /* Firefox 18- */
   line-height: 24px;
   text-align: center;
   color: #374957;
-  margin-bottom: 40px;
+  position: absolute;
+  bottom: 88px;
 }
 
 .card_price {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
+  bottom: 16px;
+  width: 240px;
 }
 
 .fake_price {
@@ -1135,14 +1139,15 @@ input:-moz-placeholder { /* Firefox 18- */
 .card_container_slider .slick-list {
   overflow: hidden;
   height: 450px;
+  width: 1392px;
 }
 
 .card_container_slider .slick-slide {
-  height: 360px;
-  width: 272px !important;
+  height: 390px;
+  /* width: 272px !important; */
   margin-top: 32px;
   margin-right: 4px;
-  margin-left: 3px;
+  margin-left: 4px;
 }
 
 .btn_arrows .slick-arrow {
@@ -1151,7 +1156,7 @@ input:-moz-placeholder { /* Firefox 18- */
   width: 32px;
   height: 32px;
   padding: 16px;
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05);
   border-radius: 100px;
 }
 
@@ -1167,6 +1172,38 @@ input:-moz-placeholder { /* Firefox 18- */
   height: 15px;
   margin-left: 24px;
 }
+
+.card_img_slider .slick-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 208px;
+  width: 240px;
+  /* left: 10%; */
+
+}
+
+.card_img_slider .slick-dots li{
+  list-style: none;
+  margin: 0 4px;
+}
+
+/* Элемент точки */
+.card_img_slider .slick-dots li button{
+  font-size: 0;
+  height: 2px;
+  width: 32px;
+  border: none;
+  opacity: 0.5;
+}
+
+/* Активная точка */
+.card_img_slider .slick-dots li.slick-active button{
+  background-color: #FFA500;
+}
+
+
 
 /* ===============CATALOG================ */
 

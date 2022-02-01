@@ -6,7 +6,17 @@ $(document).ready(function(){
   });
   $('.card_container_slider').slick({
     slidesToShow: 5,
-    appendArrows: $(".btn_arrows")
+    appendArrows: $(".btn_arrows"),
+    pauseOnHover: true,
+    pauseOnDotsHover: true
+  });
+  $('.card_img_slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    draggable: false,
+    // fade: true,
   });
 });
 	
