@@ -1,6 +1,5 @@
 function showDropdown() {
   document.getElementById("dropdown").classList.toggle("dropdown__show"); 
-  // document.getElementById("btn_catalog_img").setAttribute("src", "./svg/cross-small.svg");
 }
 
 window.onclick = function (event) {
