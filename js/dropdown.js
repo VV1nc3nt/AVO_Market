@@ -7,3 +7,11 @@ window.onclick = function (event) {
     document.getElementById("dropdown").classList.toggle("dropdown__show"); 
   }
 }
+
+function showDropdownInput() {
+  document.getElementById("price_input").classList.toggle("price_input_show"); 
+}
+
+function showDropdownCheckbox() {
+  document.getElementById("checkbox_wrapper").classList.toggle("checkbox_wrapper_show"); 
+}

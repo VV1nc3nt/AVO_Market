@@ -328,9 +328,12 @@
           <div class="catalog_input">
             <div class="catalog_cat_box_head">
               <span class="catalog_cat_span">Input</span>
-              <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">  
+              <button class="show_catalog" onclick="showDropdownInput()">
+                <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+              </button>
+              
             </div>
-            <div class="price_input">
+            <div class="price_input" id="price_input">
               <input type="text" name="price" placeholder="От 1" class="input_number" min="0">
               <input type="text" name="price" placeholder="До 1000000" class="input_number" min="0">
             </div>            
@@ -338,12 +341,15 @@
           <div class="catalog_checkbox">
             <div class="catalog_cat_box_head">
               <span class="catalog_cat_span">Checkbox</span>
-              <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">  
+              <button class="show_catalog" onclick="showDropdownCheckbox()">
+                <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+              </button>
             </div>
-            <div class="checkbox_search">
-              <input type="search" name="search_cat" class="search_cat" placeholder="Поиск по списку">
-            </div>
-            <div class="checkbox_wrapper">
+            
+            <div class="checkbox_wrapper" id="checkbox_wrapper">
+              <div class="checkbox_search">
+                <input type="search" name="search_cat" class="search_cat" placeholder="Поиск по списку">
+              </div>
               <div class="checkbox_container">
                 <input type="checkbox" name="" id="checkbox_custom" class="checkbox_custom">
                 <label for="checkbox_custom" class="checkbox_label">Checkbox</label>
@@ -392,7 +398,7 @@
               <div class="toggle_wrapper">
                 <div class="toggle_container">
                   <label class="switch">
-                    <input type="checkbox" checked>
+                    <input type="checkbox">
                     <span class="slider round"></span>
                   </label>
                 </div>                 

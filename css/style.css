@@ -2405,6 +2405,11 @@ input:-moz-placeholder { /* Firefox 18- */
   margin: 0 auto 100px;
 }
 
+.catalog_box_container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .catalog_box_wrapper {
   width: 1112px;
   display: flex;
@@ -2454,8 +2459,12 @@ input:-moz-placeholder { /* Firefox 18- */
 }
 
 .price_input {
-  display: flex;
   justify-content: space-between;
+  display: none;
+}
+
+.price_input_show {
+  display: flex;
 }
 
 .input_number {
@@ -2504,8 +2513,11 @@ input:-moz-placeholder { /* Firefox 18- */
 .checkbox_wrapper {
   max-height: 160px;
   overflow: scroll;
-  scrollbar-width: thin;
-  scrollbar-color: #374957;
+  display: none;
+}
+
+.checkbox_wrapper_show {
+  display: block;
 }
 
 .checkbox_container:nth-child(n + 2) {
@@ -2645,3 +2657,10 @@ input:checked + .slider:before {
   padding: 12px 0;
   cursor: pointer;
 }
+
+.show_catalog {
+  border: none;
+  background-color: #ffffff;
+}
+
+
