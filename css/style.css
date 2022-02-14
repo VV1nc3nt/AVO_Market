@@ -90,6 +90,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 body {
@@ -638,12 +639,12 @@ input:-moz-placeholder { /* Firefox 18- */
 }
 
 .main_banner_slider .slick-arrow.slick-prev{
-  left: 270px;
+  left: 70px;
   background: url("../svg/angle-left.svg") 0 0 no-repeat;
 }
 
 .main_banner_slider .slick-arrow.slick-next{
-  right: 270px;
+  right: 70px;
   background: url("../svg/angle-right.svg") 0 0 no-repeat;
 }
 
@@ -2361,9 +2362,11 @@ input:-moz-placeholder { /* Firefox 18- */
 
 .top_map {
   width: 1392px;
-  margin: 40px auto 80px;
+  margin: 40px auto 40px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #F8F8F8;
+  padding-bottom: 40px;
 }
 
 .catalog_page > .card_title_container {
@@ -2663,4 +2666,315 @@ input:checked + .slider:before {
   background-color: #ffffff;
 }
 
+.catalog_box_header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
 
+.catalog_box_header_text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  font-style: normal;
+  line-height: 32px;
+  color: #374957;
+  margin-right: 112px;
+}
+
+.catalog_box_sort {
+  margin-right: 230px;
+  display: flex;
+}
+
+.catalog_box_sort_li {
+  display: flex;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.catalog_box_sort_name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 16px;
+  color: #374957;
+}
+
+.catalog_box_sort_li:nth-child(n + 2) {
+  margin-left: 50px;
+}
+
+.catalog_box_sort_svg {
+  margin-right: 8px;
+}
+
+.sort_buttons {
+  display: flex;
+  align-self: baseline;
+  margin-left: 40px;
+}
+
+.sort_row {
+  display: flex;
+  border: none;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.sort_block {
+  display: flex;
+  border: none;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.card_container:nth-child(n + 5) {
+  margin-top: 8px;
+}
+
+.catalog_row_wrapper {
+  width: 1112px;
+}
+
+.catalog_row_container {
+  padding: 32px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 11px;
+  display: flex;
+}
+
+.catalog_row_container:nth-child(n + 2) {
+  margin-top: 8px;
+}
+
+.card_row_text_group {
+  margin-left: 24px;
+  margin-right: 80px;
+  width: 520px;
+}
+
+.card_row_name {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 16px;
+  color: #374957;
+}
+
+.catalog_row_img {
+  height: 120px;
+}
+
+.card_row_ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 98px;
+  margin-top: 16px;
+}
+
+.card_row_li {
+  width: 224px;
+  overflow: hidden;
+  margin: 0 48px 1.2em 0;
+  
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  font-style: normal;
+  line-height: 9px;
+  color: #374957;
+}
+
+.card_row_li:after {
+  content: '\00a0';
+  display: block;
+  
+  overflow: hidden;
+  border-bottom: #BABEC1 1px dotted;
+}
+
+.card_row_li .row_li_name {
+  float: left;
+  
+  color: #BABEC1;
+  white-space: nowrap;
+}
+
+.card_row_li .row_li_value {
+  float: right;
+  
+  white-space: nowrap;
+}
+
+.catalog_row_buy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 38px;
+  border-right: 1px solid #F8F8F8;
+}
+
+.row_buy_price {
+  display: flex;
+}
+
+.row_fake_price {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 16px;
+  color: #DCDDDD;
+  text-decoration:line-through;
+  margin-right: 5px;
+}
+
+.fake_rubles {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 16px;
+  color: #DCDDDD;
+  text-decoration:line-through;
+  margin-right: 10px;
+}
+
+.row_real_price {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 20px;
+  color: #374957;
+  margin-right: 5px;
+}
+
+.rubles {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 20px;
+  color: #374957;
+}
+
+.row_amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row_amount_span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 16px;
+  color: #374957;
+}
+
+.plus {
+  cursor: pointer;
+}
+
+.minus {
+  cursor: pointer;
+}
+
+.row_buy_button {
+  width: 184px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row_buy_orange {
+  cursor: pointer;
+  width: 128px;
+  height: 40px;
+  border-radius: 100px;
+  border: none;
+  background-color: #FFA500;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.buy_one_click {
+  display: flex;
+  background-color: #ffffff;
+  border: none;
+  padding: 12px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+}
+
+.comp_hrt {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: space-between;
+  margin-left: 24px;
+  height: 102px;
+}
+
+.row_button_add {
+  display: flex;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+  padding: 8px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+}
+
+.row_buy_card {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 16px;
+  color: #374957;
+  background-color: #ffffff;
+  border: 2px solid #FFA500;
+  width: 184px;
+  height: 40px;
+  border-radius: 100px;
+}
+
+.row_buy_order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFA500;
+  border: none;
+  border-radius: 100px;
+  width: 184px;
+  height: 40px;
+}
+
+.row_order {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 16px;
+  color: #374957;
+  margin-left: 10px;
+}

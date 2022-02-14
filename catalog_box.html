@@ -323,1769 +323,1042 @@
     </section>
 
     <section class="catalog_box">
-      <div class="catalog_box_container">
-        <div class="catalog_box_menu">
-          <div class="catalog_input">
-            <div class="catalog_cat_box_head">
-              <span class="catalog_cat_span">Input</span>
-              <button class="show_catalog" onclick="showDropdownInput()">
-                <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
-              </button>
-              
-            </div>
-            <div class="price_input" id="price_input">
-              <input type="text" name="price" placeholder="От 1" class="input_number" min="0">
-              <input type="text" name="price" placeholder="До 1000000" class="input_number" min="0">
-            </div>            
-          </div>
-          <div class="catalog_checkbox">
-            <div class="catalog_cat_box_head">
-              <span class="catalog_cat_span">Checkbox</span>
-              <button class="show_catalog" onclick="showDropdownCheckbox()">
-                <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
-              </button>
-            </div>
-            
-            <div class="checkbox_wrapper" id="checkbox_wrapper">
-              <div class="checkbox_search">
-                <input type="search" name="search_cat" class="search_cat" placeholder="Поиск по списку">
-              </div>
-              <div class="checkbox_container">
-                <input type="checkbox" name="" id="checkbox_custom" class="checkbox_custom">
-                <label for="checkbox_custom" class="checkbox_label">Checkbox</label>
-              </div>
-              <div class="checkbox_container">
-                <input type="checkbox" name="" id="checkbox_custom_1" class="checkbox_custom">
-                <label for="checkbox_custom_1" class="checkbox_label">Checkbox</label>
-              </div>
-              <div class="checkbox_container">
-                <input type="checkbox" name="" id="checkbox_custom_2" class="checkbox_custom">
-                <label for="checkbox_custom_2" class="checkbox_label">Checkbox</label>
-              </div>
-              <div class="checkbox_container">
-                <input type="checkbox" name="" id="checkbox_custom_3" class="checkbox_custom">
-                <label for="checkbox_custom_3" class="checkbox_label">Checkbox</label>
-              </div>
-              <div class="checkbox_container">
-                <input type="checkbox" name="" id="checkbox_custom_4" class="checkbox_custom">
-                <label for="checkbox_custom_4" class="checkbox_label">Checkbox</label>
-              </div>
-              <div class="checkbox_container">
-                <input type="checkbox" name="" id="checkbox_custom_5" class="checkbox_custom">
-                <label for="checkbox_custom_5" class="checkbox_label">Checkbox</label>
-              </div>
-              <div class="checkbox_container">
-                <input type="checkbox" name="" id="checkbox_custom_6" class="checkbox_custom">
-                <label for="checkbox_custom_6" class="checkbox_label">Checkbox</label>
-              </div>
-              <div class="checkbox_container">
-                <input type="checkbox" name="" id="checkbox_custom_7" class="checkbox_custom">
-                <label for="checkbox_custom_7" class="checkbox_label">Checkbox</label>
-              </div>
-              <div class="checkbox_container">
-                <input type="checkbox" name="" id="checkbox_custom_8" class="checkbox_custom">
-                <label for="checkbox_custom_8" class="checkbox_label">Checkbox</label>
-              </div>
-              <div class="checkbox_container">
-                <input type="checkbox" name="" id="checkbox_custom_9" class="checkbox_custom">
-                <label for="checkbox_custom_9" class="checkbox_label">Checkbox</label>
-              </div>
-            </div>            
-          </div>
-          <div class="catalog_toggle">
-            <div class="catalog_cat_box_head">
-              <span class="catalog_cat_span">Toggle</span>
-              <div class="toggle_wrapper">
-                <div class="toggle_container">
-                  <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                  </label>
-                </div>                 
-              </div>              
-            </div>            
-          </div>
-          <button class="clear">
-            <span class="catalog_clear_button">Clear</span>
+      <div class="catalog_box_header">
+        <h1 class="catalog_box_header_text">Освещение</h1>
+        <ul class="catalog_box_sort">
+          <li class="catalog_box_sort_li">
+            <img src="./svg/sort.svg" alt="" class="catalog_box_sort_svg">
+            <span class="catalog_box_sort_name">По популярности</span>
+          </li>
+          <li class="catalog_box_sort_li">
+            <img src="./svg/sort.svg" alt="" class="catalog_box_sort_svg">
+            <span class="catalog_box_sort_name">Цене</span>
+          </li>
+          <li class="catalog_box_sort_li">
+            <img src="./svg/sort.svg" alt="" class="catalog_box_sort_svg">
+            <span class="catalog_box_sort_name">Распродажа</span>
+          </li>
+          <li class="catalog_box_sort_li">
+            <img src="./svg/sort.svg" alt="" class="catalog_box_sort_svg">
+            <span class="catalog_box_sort_name">По новизне</span>
+          </li>
+        </ul>
+        <div class="catalog_box_sort_li">
+          <img src="./svg/refresh.svg" alt="" class="catalog_box_sort_svg">
+          <span class="catalog_box_sort_name">Сбросить настройки</span>
+        </div>
+        <div class="sort_buttons">
+          <button class="sort_block">
+            <img src="./svg/sort_block.svg" alt="" class="sort_img">
+          </button>
+          <button class="sort_row">
+            <img src="./svg/sort_row.svg" alt="" class="sort_img">
           </button>
         </div>
-        <div class="catalog_box_wrapper">
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
+      </div>
+      <div class="catalog_box_container">
+        <div class="catalog_box_menu_wrapper">
+          <div class="catalog_box_menu">
+            <div class="catalog_input">
+              <div class="catalog_cat_box_head">
+                <span class="catalog_cat_span">Input</span>
+                <button class="show_catalog" onclick="showDropdownInput()">
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                
+              </div>
+              <div class="price_input" id="price_input">
+                <input type="text" name="price" placeholder="От 1" class="input_number" min="0">
+                <input type="text" name="price" placeholder="До 1000000" class="input_number" min="0">
+              </div>            
+            </div>
+            <div class="catalog_checkbox">
+              <div class="catalog_cat_box_head">
+                <span class="catalog_cat_span">Checkbox</span>
+                <button class="show_catalog" onclick="showDropdownCheckbox()">
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+              </div>
+              
+              <div class="checkbox_wrapper" id="checkbox_wrapper">
+                <div class="checkbox_search">
+                  <input type="search" name="search_cat" class="search_cat" placeholder="Поиск по списку">
+                </div>
+                <div class="checkbox_container">
+                  <input type="checkbox" name="" id="checkbox_custom" class="checkbox_custom">
+                  <label for="checkbox_custom" class="checkbox_label">Checkbox</label>
+                </div>
+                <div class="checkbox_container">
+                  <input type="checkbox" name="" id="checkbox_custom_1" class="checkbox_custom">
+                  <label for="checkbox_custom_1" class="checkbox_label">Checkbox</label>
+                </div>
+                <div class="checkbox_container">
+                  <input type="checkbox" name="" id="checkbox_custom_2" class="checkbox_custom">
+                  <label for="checkbox_custom_2" class="checkbox_label">Checkbox</label>
+                </div>
+                <div class="checkbox_container">
+                  <input type="checkbox" name="" id="checkbox_custom_3" class="checkbox_custom">
+                  <label for="checkbox_custom_3" class="checkbox_label">Checkbox</label>
+                </div>
+                <div class="checkbox_container">
+                  <input type="checkbox" name="" id="checkbox_custom_4" class="checkbox_custom">
+                  <label for="checkbox_custom_4" class="checkbox_label">Checkbox</label>
+                </div>
+                <div class="checkbox_container">
+                  <input type="checkbox" name="" id="checkbox_custom_5" class="checkbox_custom">
+                  <label for="checkbox_custom_5" class="checkbox_label">Checkbox</label>
+                </div>
+                <div class="checkbox_container">
+                  <input type="checkbox" name="" id="checkbox_custom_6" class="checkbox_custom">
+                  <label for="checkbox_custom_6" class="checkbox_label">Checkbox</label>
+                </div>
+                <div class="checkbox_container">
+                  <input type="checkbox" name="" id="checkbox_custom_7" class="checkbox_custom">
+                  <label for="checkbox_custom_7" class="checkbox_label">Checkbox</label>
+                </div>
+                <div class="checkbox_container">
+                  <input type="checkbox" name="" id="checkbox_custom_8" class="checkbox_custom">
+                  <label for="checkbox_custom_8" class="checkbox_label">Checkbox</label>
+                </div>
+                <div class="checkbox_container">
+                  <input type="checkbox" name="" id="checkbox_custom_9" class="checkbox_custom">
+                  <label for="checkbox_custom_9" class="checkbox_label">Checkbox</label>
+                </div>
+              </div>            
+            </div>
+            <div class="catalog_toggle">
+              <div class="catalog_cat_box_head">
+                <span class="catalog_cat_span">Toggle</span>
+                <div class="toggle_wrapper">
+                  <div class="toggle_container">
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>                 
+                </div>              
+              </div>            
+            </div>
+            <button class="clear">
+              <span class="catalog_clear_button">Clear</span>
+            </button>
+          </div>
+        </div>
+        
+        <!-- <div class="catalog_box_wrapper">
+          <div class="card_container">     
+            <div class="card_item">
+              <span class="small_span sale">Скидка</span>
+              <span class="small_span">Новинка</span>
+              <div class="card_img_group">
+                <div class="card_img_slider">
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>            
+                </div>
+                <div class="slider_dots"></div>
+                <div class="btn_group">
+                  <a href="" class="btn_small btn_small_card">
+                    <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                  </a>
+                  <a href="" class="btn_small btn_small_card">
+                    <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                  </a>
+                </div>
+              </div>
+    
+              <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
+              <div class="card_price">
+                <div class="price_container">
+                  <span class="fake_price">1 113 200 ₽</span>
+                  <span class="real_price">1 000 000 ₽</span>
+                </div>
+                <a href="" class="order">+</a>
               </div>
             </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
+          </div>
+          <div class="card_container">     
+            <div class="card_item">
+              <span class="small_span sale">Скидка</span>
+              <span class="small_span">Новинка</span>
+              <div class="card_img_group">
+                <div class="card_img_slider">
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>            
+                </div>
+                <div class="slider_dots"></div>
+                <div class="btn_group">
+                  <a href="" class="btn_small btn_small_card">
+                    <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                  </a>
+                  <a href="" class="btn_small btn_small_card">
+                    <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                  </a>
+                </div>
               </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
+    
+              <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
+              <div class="card_price">
+                <div class="price_container">
+                  <span class="fake_price">1 113 200 ₽</span>
+                  <span class="real_price">1 000 000 ₽</span>
+                </div>
+                <a href="" class="order">+</a>
               </div>
             </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
+          </div>
+          <div class="card_container">     
+            <div class="card_item">
+              <span class="small_span sale">Скидка</span>
+              <span class="small_span">Новинка</span>
+              <div class="card_img_group">
+                <div class="card_img_slider">
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>            
+                </div>
+                <div class="slider_dots"></div>
+                <div class="btn_group">
+                  <a href="" class="btn_small btn_small_card">
+                    <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                  </a>
+                  <a href="" class="btn_small btn_small_card">
+                    <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                  </a>
+                </div>
               </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
+    
+              <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
+              <div class="card_price">
+                <div class="price_container">
+                  <span class="fake_price">1 113 200 ₽</span>
+                  <span class="real_price">1 000 000 ₽</span>
+                </div>
+                <a href="" class="order">+</a>
               </div>
             </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
+          </div>
+          <div class="card_container">     
+            <div class="card_item">
+              <span class="small_span sale">Скидка</span>
+              <span class="small_span">Новинка</span>
+              <div class="card_img_group">
+                <div class="card_img_slider">
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>            
+                </div>
+                <div class="slider_dots"></div>
+                <div class="btn_group">
+                  <a href="" class="btn_small btn_small_card">
+                    <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                  </a>
+                  <a href="" class="btn_small btn_small_card">
+                    <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                  </a>
+                </div>
               </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
+    
+              <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
+              <div class="card_price">
+                <div class="price_container">
+                  <span class="fake_price">1 113 200 ₽</span>
+                  <span class="real_price">1 000 000 ₽</span>
+                </div>
+                <a href="" class="order">+</a>
               </div>
             </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
+          </div>
+          <div class="card_container">     
+            <div class="card_item">
+              <span class="small_span sale">Скидка</span>
+              <span class="small_span">Новинка</span>
+              <div class="card_img_group">
+                <div class="card_img_slider">
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>            
+                </div>
+                <div class="slider_dots"></div>
+                <div class="btn_group">
+                  <a href="" class="btn_small btn_small_card">
+                    <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                  </a>
+                  <a href="" class="btn_small btn_small_card">
+                    <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                  </a>
+                </div>
               </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
+    
+              <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
+              <div class="card_price">
+                <div class="price_container">
+                  <span class="fake_price">1 113 200 ₽</span>
+                  <span class="real_price">1 000 000 ₽</span>
+                </div>
+                <a href="" class="order">+</a>
               </div>
             </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
+          </div>
+          <div class="card_container">     
+            <div class="card_item">
+              <span class="small_span sale">Скидка</span>
+              <span class="small_span">Новинка</span>
+              <div class="card_img_group">
+                <div class="card_img_slider">
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>            
+                </div>
+                <div class="slider_dots"></div>
+                <div class="btn_group">
+                  <a href="" class="btn_small btn_small_card">
+                    <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                  </a>
+                  <a href="" class="btn_small btn_small_card">
+                    <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                  </a>
+                </div>
               </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
+    
+              <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
+              <div class="card_price">
+                <div class="price_container">
+                  <span class="fake_price">1 113 200 ₽</span>
+                  <span class="real_price">1 000 000 ₽</span>
+                </div>
+                <a href="" class="order">+</a>
               </div>
             </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
+          </div>
+          <div class="card_container">     
+            <div class="card_item">
+              <span class="small_span sale">Скидка</span>
+              <span class="small_span">Новинка</span>
+              <div class="card_img_group">
+                <div class="card_img_slider">
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>            
+                </div>
+                <div class="slider_dots"></div>
+                <div class="btn_group">
+                  <a href="" class="btn_small btn_small_card">
+                    <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                  </a>
+                  <a href="" class="btn_small btn_small_card">
+                    <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                  </a>
+                </div>
               </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
+    
+              <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
+              <div class="card_price">
+                <div class="price_container">
+                  <span class="fake_price">1 113 200 ₽</span>
+                  <span class="real_price">1 000 000 ₽</span>
+                </div>
+                <a href="" class="order">+</a>
               </div>
             </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
+          </div>
+          <div class="card_container">     
+            <div class="card_item">
+              <span class="small_span sale">Скидка</span>
+              <span class="small_span">Новинка</span>
+              <div class="card_img_group">
+                <div class="card_img_slider">
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                  </div>
+                  <div class="card_slide">
+                    <img src="./images/lamp_card.png" alt="" class="card_img">
+                  </div>            
+                </div>
+                <div class="slider_dots"></div>
+                <div class="btn_group">
+                  <a href="" class="btn_small btn_small_card">
+                    <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                  </a>
+                  <a href="" class="btn_small btn_small_card">
+                    <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                  </a>
+                </div>
               </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
+    
+              <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
+              <div class="card_price">
+                <div class="price_container">
+                  <span class="fake_price">1 113 200 ₽</span>
+                  <span class="real_price">1 000 000 ₽</span>
+                </div>
+                <a href="" class="order">+</a>
               </div>
             </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
+          </div>
+        </div> -->
+
+        <div class="catalog_row_wrapper">
+          <div class="catalog_row_container">
+            <img src="./images/card_row.png" alt="" class="catalog_row_img">
+            <div class="card_row_text_group">
+              <a href="" class="card_row_name">Подвесная люстра Chiaro Сюзанна 458011012</a>
+              <ul class="card_row_ul">
+                <li class="card_row_li"><span class="row_li_name">Артикул</span><span class="row_li_value">458011012</span></li>
+                <li class="card_row_li"><span class="row_li_name">Страна</span><span class="row_li_value">Германия</span></li>
+                <li class="card_row_li"><span class="row_li_name">Вес</span><span class="row_li_value">13,2 кг</span></li>
+                <li class="card_row_li"><span class="row_li_name">Гарантия</span><span class="row_li_value">12 месяцев</span></li>
+                <li class="card_row_li"><span class="row_li_name">Установка</span><span class="row_li_value">Потолочная</span></li>
+                <li class="card_row_li"><span class="row_li_name">Площадь освещения</span><span class="row_li_value">26,7 кв.м.</span></li>
+                <li class="card_row_li"><span class="row_li_name">Стиль</span><span class="row_li_value">Классика</span></li>
+                <li class="card_row_li"><span class="row_li_name">Коллекция</span><span class="row_li_value">Сюзанна</span></li>
+              </ul>
             </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
+            <div class="catalog_row_buy">
+              <div class="row_buy_price">
+                <span class="row_fake_price">176 590</span><span class="fake_rubles">₽</span>
+                <span class="row_real_price">176 590</span><span class="rubles">₽</span>
               </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
+              <div class="row_amount">
+                <img src="./svg/add.svg" alt="" class="plus">
+                <span class="row_amount_span">1</span>
+                <img src="./svg/minus.svg" alt="" class="minus">
+              </div>
+              <div class="row_buy_button">
+                <button class="row_buy_orange">Купить</button>
+                <button class="buy_one_click">
+                  <img src="./svg/buy_1_click.svg" alt="" class="buy_1_img">
+                </button>
               </div>
             </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
+            <div class="comp_hrt">
+              <button class="comp row_button_add">
+                <img src="./svg/comparation.svg" alt="" class="row_button_img">
+              </button>
+              <button class="hrt row_button_add">
+                <img src="./svg/heart.svg" alt="" class="row_button_img">
+              </button>
             </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
+          </div>
+          <div class="catalog_row_container">
+            <img src="./images/card_row.png" alt="" class="catalog_row_img">
+            <div class="card_row_text_group">
+              <a href="" class="card_row_name">Подвесная люстра Chiaro Сюзанна 458011012</a>
+              <ul class="card_row_ul">
+                <li class="card_row_li"><span class="row_li_name">Артикул</span><span class="row_li_value">458011012</span></li>
+                <li class="card_row_li"><span class="row_li_name">Страна</span><span class="row_li_value">Германия</span></li>
+                <li class="card_row_li"><span class="row_li_name">Вес</span><span class="row_li_value">13,2 кг</span></li>
+                <li class="card_row_li"><span class="row_li_name">Гарантия</span><span class="row_li_value">12 месяцев</span></li>
+                <li class="card_row_li"><span class="row_li_name">Установка</span><span class="row_li_value">Потолочная</span></li>
+                <li class="card_row_li"><span class="row_li_name">Площадь освещения</span><span class="row_li_value">26,7 кв.м.</span></li>
+                <li class="card_row_li"><span class="row_li_name">Стиль</span><span class="row_li_value">Классика</span></li>
+                <li class="card_row_li"><span class="row_li_name">Коллекция</span><span class="row_li_value">Сюзанна</span></li>
+              </ul>
+            </div>
+            <div class="catalog_row_buy">
+              <div class="row_buy_price">
+                <span class="row_fake_price">176 590</span><span class="fake_rubles">₽</span>
+                <span class="row_real_price">176 590</span><span class="rubles">₽</span>
               </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
+              <div class="row_amount">
+                <img src="./svg/add.svg" alt="" class="plus">
+                <span class="row_amount_span">1</span>
+                <img src="./svg/minus.svg" alt="" class="minus">
+              </div>
+              <div class="row_buy_button">
+                <button class="row_buy_card">В корзине</button>
               </div>
             </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
+            <div class="comp_hrt">
+              <button class="comp row_button_add">
+                <img src="./svg/comparation.svg" alt="" class="row_button_img">
+              </button>
+              <button class="hrt row_button_add">
+                <img src="./svg/heart.svg" alt="" class="row_button_img">
+              </button>
             </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
+          </div>
+          <div class="catalog_row_container">
+            <img src="./images/card_row.png" alt="" class="catalog_row_img">
+            <div class="card_row_text_group">
+              <a href="" class="card_row_name">Подвесная люстра Chiaro Сюзанна 458011012</a>
+              <ul class="card_row_ul">
+                <li class="card_row_li"><span class="row_li_name">Артикул</span><span class="row_li_value">458011012</span></li>
+                <li class="card_row_li"><span class="row_li_name">Страна</span><span class="row_li_value">Германия</span></li>
+                <li class="card_row_li"><span class="row_li_name">Вес</span><span class="row_li_value">13,2 кг</span></li>
+                <li class="card_row_li"><span class="row_li_name">Гарантия</span><span class="row_li_value">12 месяцев</span></li>
+                <li class="card_row_li"><span class="row_li_name">Установка</span><span class="row_li_value">Потолочная</span></li>
+                <li class="card_row_li"><span class="row_li_name">Площадь освещения</span><span class="row_li_value">26,7 кв.м.</span></li>
+                <li class="card_row_li"><span class="row_li_name">Стиль</span><span class="row_li_value">Классика</span></li>
+                <li class="card_row_li"><span class="row_li_name">Коллекция</span><span class="row_li_value">Сюзанна</span></li>
+              </ul>
+            </div>
+            <div class="catalog_row_buy">
+              <div class="row_buy_price">
+                <span class="row_real_price">176 590</span><span class="rubles">₽</span>
               </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
+              <div class="row_amount">
+                <img src="./svg/add.svg" alt="" class="plus">
+                <span class="row_amount_span">1</span>
+                <img src="./svg/minus.svg" alt="" class="minus">
+              </div>
+              <div class="row_buy_button">
+                <button class="row_buy_order">
+                  <img src="./svg/spinner.svg" alt="" class="row_order_img">
+                  <span class="row_order">Под заказ</span>
+                </button>
               </div>
             </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
+            <div class="comp_hrt">
+              <button class="comp row_button_add">
+                <img src="./svg/comparation.svg" alt="" class="row_button_img">
+              </button>
+              <button class="hrt row_button_add">
+                <img src="./svg/heart.svg" alt="" class="row_button_img">
+              </button>
             </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
-              </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-              </div>
-            </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
-              </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-              </div>
-            </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
-              </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-              </div>
-            </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
-              </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-              </div>
-            </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
-              </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-              </div>
-            </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
-              </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-              </div>
-            </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
-              </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-              </div>
-            </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
-              </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-              </div>
-            </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
-              </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-              </div>
-            </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
-              </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-              </div>
-            </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
-              </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-              </div>
-            </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
-              </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-              </div>
-            </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
-              </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-              </div>
-            </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
-              </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-              </div>
-            </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
-              </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-              </div>
-            </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
-              </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-              </div>
-            </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
-              </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
-          <article class="card_item">
-            <span class="small_span sale">Скидка</span>
-            <span class="small_span">Новинка</span>
-            <div class="card_img_group">
-              <img src="./images/lamp_card.png" alt="" class="card_img">
-              <div class="btn_group">
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-                <a href="" class="btn_small btn_small_card">
-                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                </a>
-              </div>
-            </div>
-            <div class="line_group line_card">
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line btn_line_active">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-              <a href="" class="btn_line">
-                <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect opacity="0.5" width="32" height="2" rx="1"/>
-                </svg>
-              </a>
-            </div>
-            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-            <div class="card_price">
-              <div class="price_container">
-                <span class="fake_price">1 113 200 ₽</span>
-                <span class="real_price">1 000 000 ₽</span>
-              </div>
-              <a href="" class="order">+</a>
-            </div>
-          </article>
+          </div>
         </div>
       </div>
       
     </section>
 
-    <section class="cards_section catalog_page">
+    <section class="cards_section">
       <div class="card_title_container">
         <div class="card_title_text">
           <h1 class="card_title">Просмотренные</h1>
           <a href="" class="card_title_link">Смотреть все</a>
         </div>
-        <div class="btn_arrow">
-          <a href="" class="btn_arrow_svg_left">
-            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M-8.13092e-05 4.00001C0.00316305 4.35074 0.144482 4.68608 0.393252 4.93334L3.25325 7.8C3.37816 7.92417 3.54713 7.99387 3.72325 7.99387C3.89938 7.99387 4.06834 7.92417 4.19325 7.8C4.25574 7.73803 4.30533 7.66429 4.33918 7.58306C4.37303 7.50182 4.39045 7.41468 4.39045 7.32667C4.39045 7.23866 4.37303 7.15153 4.33918 7.07029C4.30533 6.98905 4.25574 6.91531 4.19325 6.85334L1.99992 4.66667L8.66659 4.66667C8.8434 4.66667 9.01297 4.59644 9.13799 4.47141C9.26301 4.34639 9.33325 4.17682 9.33325 4.00001C9.33325 3.8232 9.26301 3.65363 9.13799 3.5286C9.01297 3.40358 8.8434 3.33334 8.66659 3.33334L1.99992 3.33334L4.19325 1.14001C4.31879 1.01536 4.38966 0.845945 4.39029 0.669036C4.39091 0.492127 4.32124 0.322215 4.19659 0.196679C4.07193 0.0711432 3.90252 0.000266217 3.72561 -0.000358919C3.5487 -0.000984055 3.37879 0.0686945 3.25325 0.193346L0.393252 3.06001C0.14286 3.30891 0.00140725 3.64696 -8.13092e-05 4.00001V4.00001Z" fill="#374957"/>
-            </svg>
-          </a>
-          <a href="" class="btn_arrow_svg_right">
-            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.0001 3.99999C9.99684 3.64926 9.85552 3.31392 9.60675 3.06666L6.74675 0.199996C6.62184 0.0758286 6.45287 0.00613403 6.27675 0.00613403C6.10062 0.00613403 5.93166 0.0758286 5.80675 0.199996C5.74426 0.261971 5.69467 0.335705 5.66082 0.416944C5.62698 0.498184 5.60955 0.585321 5.60955 0.673329C5.60955 0.761336 5.62698 0.848473 5.66082 0.929713C5.69467 1.01095 5.74426 1.08469 5.80675 1.14666L8.00008 3.33333H1.33341C1.1566 3.33333 0.987035 3.40356 0.86201 3.52859C0.736986 3.65361 0.666748 3.82318 0.666748 3.99999C0.666748 4.1768 0.736986 4.34637 0.86201 4.4714C0.987035 4.59642 1.1566 4.66666 1.33341 4.66666H8.00008L5.80675 6.85999C5.68121 6.98464 5.61034 7.15405 5.60971 7.33096C5.60909 7.50787 5.67876 7.67778 5.80341 7.80332C5.92807 7.92886 6.09748 7.99973 6.27439 8.00036C6.4513 8.00098 6.62121 7.93131 6.74675 7.80665L9.60675 4.93999C9.85714 4.69109 9.99859 4.35304 10.0001 3.99999V3.99999Z" fill="#374957"/>
-            </svg>   
-          </a>
+        <div class="btn_arrows_watched"></div>
+      </div>
+      <div class="watched_container_slider">
+        <div class="card_container">     
+          <div class="card_item">
+            <span class="small_span sale">Скидка</span>
+            <span class="small_span">Новинка</span>
+            <div class="card_img_group">
+              <div class="card_img_slider">
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>            
+              </div>
+              <div class="slider_dots"></div>
+              <div class="btn_group">
+                <a href="" class="btn_small btn_small_card">
+                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                </a>
+                <a href="" class="btn_small btn_small_card">
+                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                </a>
+              </div>
+            </div>
+  
+            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
+            <div class="card_price">
+              <div class="price_container">
+                <span class="fake_price">1 113 200 ₽</span>
+                <span class="real_price">1 000 000 ₽</span>
+              </div>
+              <a href="" class="order">+</a>
+            </div>
+          </div>
         </div>
+        <div class="card_container">     
+          <div class="card_item">
+            <span class="small_span sale">Скидка</span>
+            <span class="small_span">Новинка</span>
+            <div class="card_img_group">
+              <div class="card_img_slider">
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>            
+              </div>
+              <div class="slider_dots"></div>
+              <div class="btn_group">
+                <a href="" class="btn_small btn_small_card">
+                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                </a>
+                <a href="" class="btn_small btn_small_card">
+                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                </a>
+              </div>
+            </div>
+  
+            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
+            <div class="card_price">
+              <div class="price_container">
+                <span class="fake_price">1 113 200 ₽</span>
+                <span class="real_price">1 000 000 ₽</span>
+              </div>
+              <a href="" class="order">+</a>
+            </div>
+          </div>
+        </div>
+        <div class="card_container">     
+          <div class="card_item">
+            <span class="small_span sale">Скидка</span>
+            <span class="small_span">Новинка</span>
+            <div class="card_img_group">
+              <div class="card_img_slider">
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>            
+              </div>
+              <div class="slider_dots"></div>
+              <div class="btn_group">
+                <a href="" class="btn_small btn_small_card">
+                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                </a>
+                <a href="" class="btn_small btn_small_card">
+                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                </a>
+              </div>
+            </div>
+  
+            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
+            <div class="card_price">
+              <div class="price_container">
+                <span class="fake_price">1 113 200 ₽</span>
+                <span class="real_price">1 000 000 ₽</span>
+              </div>
+              <a href="" class="order">+</a>
+            </div>
+          </div>
+        </div>
+        <div class="card_container">     
+          <div class="card_item">
+            <span class="small_span sale">Скидка</span>
+            <span class="small_span">Новинка</span>
+            <div class="card_img_group">
+              <div class="card_img_slider">
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>            
+              </div>
+              <div class="slider_dots"></div>
+              <div class="btn_group">
+                <a href="" class="btn_small btn_small_card">
+                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                </a>
+                <a href="" class="btn_small btn_small_card">
+                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                </a>
+              </div>
+            </div>
+  
+            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
+            <div class="card_price">
+              <div class="price_container">
+                <span class="fake_price">1 113 200 ₽</span>
+                <span class="real_price">1 000 000 ₽</span>
+              </div>
+              <a href="" class="order">+</a>
+            </div>
+          </div>
+        </div>
+        <div class="card_container">     
+          <div class="card_item">
+            <span class="small_span sale">Скидка</span>
+            <span class="small_span">Новинка</span>
+            <div class="card_img_group">
+              <div class="card_img_slider">
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>            
+              </div>
+              <div class="slider_dots"></div>
+              <div class="btn_group">
+                <a href="" class="btn_small btn_small_card">
+                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                </a>
+                <a href="" class="btn_small btn_small_card">
+                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                </a>
+              </div>
+            </div>
+  
+            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
+            <div class="card_price">
+              <div class="price_container">
+                <span class="fake_price">1 113 200 ₽</span>
+                <span class="real_price">1 000 000 ₽</span>
+              </div>
+              <a href="" class="order">+</a>
+            </div>
+          </div>
+        </div>
+        <div class="card_container">     
+          <div class="card_item">
+            <span class="small_span sale">Скидка</span>
+            <span class="small_span">Новинка</span>
+            <div class="card_img_group">
+              <div class="card_img_slider">
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>            
+              </div>
+              <div class="slider_dots"></div>
+              <div class="btn_group">
+                <a href="" class="btn_small btn_small_card">
+                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                </a>
+                <a href="" class="btn_small btn_small_card">
+                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                </a>
+              </div>
+            </div>
+  
+            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
+            <div class="card_price">
+              <div class="price_container">
+                <span class="fake_price">1 113 200 ₽</span>
+                <span class="real_price">1 000 000 ₽</span>
+              </div>
+              <a href="" class="order">+</a>
+            </div>
+          </div>
+        </div>
+        <div class="card_container">     
+          <div class="card_item">
+            <span class="small_span sale">Скидка</span>
+            <span class="small_span">Новинка</span>
+            <div class="card_img_group">
+              <div class="card_img_slider">
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>            
+              </div>
+              <div class="slider_dots"></div>
+              <div class="btn_group">
+                <a href="" class="btn_small btn_small_card">
+                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                </a>
+                <a href="" class="btn_small btn_small_card">
+                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                </a>
+              </div>
+            </div>
+  
+            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
+            <div class="card_price">
+              <div class="price_container">
+                <span class="fake_price">1 113 200 ₽</span>
+                <span class="real_price">1 000 000 ₽</span>
+              </div>
+              <a href="" class="order">+</a>
+            </div>
+          </div>
+        </div>
+        <div class="card_container">     
+          <div class="card_item">
+            <span class="small_span sale">Скидка</span>
+            <span class="small_span">Новинка</span>
+            <div class="card_img_group">
+              <div class="card_img_slider">
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>            
+              </div>
+              <div class="slider_dots"></div>
+              <div class="btn_group">
+                <a href="" class="btn_small btn_small_card">
+                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                </a>
+                <a href="" class="btn_small btn_small_card">
+                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                </a>
+              </div>
+            </div>
+  
+            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
+            <div class="card_price">
+              <div class="price_container">
+                <span class="fake_price">1 113 200 ₽</span>
+                <span class="real_price">1 000 000 ₽</span>
+              </div>
+              <a href="" class="order">+</a>
+            </div>
+          </div>
+        </div>
+        <div class="card_container">     
+          <div class="card_item">
+            <span class="small_span sale">Скидка</span>
+            <span class="small_span">Новинка</span>
+            <div class="card_img_group">
+              <div class="card_img_slider">
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>            
+              </div>
+              <div class="slider_dots"></div>
+              <div class="btn_group">
+                <a href="" class="btn_small btn_small_card">
+                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                </a>
+                <a href="" class="btn_small btn_small_card">
+                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                </a>
+              </div>
+            </div>
+  
+            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
+            <div class="card_price">
+              <div class="price_container">
+                <span class="fake_price">1 113 200 ₽</span>
+                <span class="real_price">1 000 000 ₽</span>
+              </div>
+              <a href="" class="order">+</a>
+            </div>
+          </div>
+        </div>
+        <div class="card_container">     
+          <div class="card_item">
+            <span class="small_span sale">Скидка</span>
+            <span class="small_span">Новинка</span>
+            <div class="card_img_group">
+              <div class="card_img_slider">
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                </div>
+                <div class="card_slide">
+                  <img src="./images/lamp_card.png" alt="" class="card_img">
+                </div>            
+              </div>
+              <div class="slider_dots"></div>
+              <div class="btn_group">
+                <a href="" class="btn_small btn_small_card">
+                  <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                </a>
+                <a href="" class="btn_small btn_small_card">
+                  <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                </a>
+              </div>
+            </div>
+  
+            <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
+            <div class="card_price">
+              <div class="price_container">
+                <span class="fake_price">1 113 200 ₽</span>
+                <span class="real_price">1 000 000 ₽</span>
+              </div>
+              <a href="" class="order">+</a>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div class="card_container">     
-        <article class="card_item">
-          <span class="small_span sale">Скидка</span>
-          <span class="small_span">Новинка</span>
-          <div class="card_img_group">
-            <img src="./images/lamp_card.png" alt="" class="card_img">
-            <div class="btn_group">
-              <a href="" class="btn_small btn_small_card">
-                <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-              </a>
-              <a href="" class="btn_small btn_small_card">
-                <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-              </a>
-            </div>
-          </div>
-          <div class="line_group line_card">
-            <a href="" class="btn_line">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-            <a href="" class="btn_line btn_line_active">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-            <a href="" class="btn_line">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-            <a href="" class="btn_line">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-            <a href="" class="btn_line">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-          </div>
-          <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-          <div class="card_price">
-            <div class="price_container">
-              <span class="fake_price">1 113 200 ₽</span>
-              <span class="real_price">1 000 000 ₽</span>
-            </div>
-            <a href="" class="order">+</a>
-          </div>
-        </article>
-        <article class="card_item">
-          <span class="small_span">Скидка</span>
-          <span class="small_span">Новинка</span>
-          <div class="card_img_group">
-            <img src="./images/lamp_card.png" alt="" class="card_img">
-            <div class="btn_group">
-              <a href="" class="btn_small btn_small_card">
-                <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-              </a>
-              <a href="" class="btn_small btn_small_card">
-                <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-              </a>
-            </div>
-          </div>
-          <div class="line_group line_card">
-            <a href="" class="btn_line">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-            <a href="" class="btn_line btn_line_active">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-            <a href="" class="btn_line">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-            <a href="" class="btn_line">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-            <a href="" class="btn_line">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-          </div>
-          <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-          <div class="card_price">
-            <div class="price_container">
-              <span class="fake_price">1 113 200 ₽</span>
-              <span class="real_price">1 000 000 ₽</span>
-            </div>
-            <a href="" class="order">+</a>
-          </div>
-        </article>
-        <article class="card_item">
-          <span class="small_span">Скидка</span>
-          <span class="small_span">Новинка</span>
-          <div class="card_img_group">
-            <img src="./images/lamp_card.png" alt="" class="card_img">
-            <div class="btn_group">
-              <a href="" class="btn_small btn_small_card">
-                <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-              </a>
-              <a href="" class="btn_small btn_small_card">
-                <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-              </a>
-            </div>
-          </div>
-          <div class="line_group line_card">
-            <a href="" class="btn_line">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-            <a href="" class="btn_line btn_line_active">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-            <a href="" class="btn_line">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-            <a href="" class="btn_line">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-            <a href="" class="btn_line">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-          </div>
-          <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-          <div class="card_price">
-            <div class="price_container">
-              <span class="fake_price">1 113 200 ₽</span>
-              <span class="real_price">1 000 000 ₽</span>
-            </div>
-            <a href="" class="order">+</a>
-          </div>
-        </article>
-        <article class="card_item">
-          <span class="small_span">Скидка</span>
-          <span class="small_span new">Новинка</span>
-          <div class="card_img_group">
-            <img src="./images/lamp_card.png" alt="" class="card_img">
-            <div class="btn_group">
-              <a href="" class="btn_small btn_small_card">
-                <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-              </a>
-              <a href="" class="btn_small btn_small_card">
-                <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-              </a>
-            </div>
-          </div>
-          <div class="line_group line_card">
-            <a href="" class="btn_line">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-            <a href="" class="btn_line btn_line_active">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-            <a href="" class="btn_line">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-            <a href="" class="btn_line">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-            <a href="" class="btn_line">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-          </div>
-          <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-          <div class="card_price">
-            <div class="price_container">
-              <span class="fake_price">1 113 200 ₽</span>
-              <span class="real_price">1 000 000 ₽</span>
-            </div>
-            <a href="" class="order">+</a>
-          </div>
-        </article>
-        <article class="card_item">
-          <span class="small_span">Скидка</span>
-          <span class="small_span">Новинка</span>
-          <div class="card_img_group">
-            <img src="./images/lamp_card.png" alt="" class="card_img">
-            <div class="btn_group">
-              <a href="" class="btn_small btn_small_card">
-                <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-              </a>
-              <a href="" class="btn_small btn_small_card">
-                <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-              </a>
-            </div>
-          </div>
-          <div class="line_group line_card">
-            <a href="" class="btn_line">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-            <a href="" class="btn_line btn_line_active">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-            <a href="" class="btn_line">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-            <a href="" class="btn_line">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-            <a href="" class="btn_line">
-              <svg width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.5" width="32" height="2" rx="1"/>
-              </svg>
-            </a>
-          </div>
-          <p class="card_desc">Подвесная люстра Osgona Tesoro 710572</p>
-          <div class="card_price">
-            <div class="price_container">
-              <span class="fake_price">1 113 200 ₽</span>
-              <span class="real_price">1 000 000 ₽</span>
-            </div>
-            <a href="" class="order">+</a>
-          </div>
-        </article>
-      </div>
+      
     </section>
     
     <section class="news brand_news">
