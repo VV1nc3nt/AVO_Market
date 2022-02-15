@@ -349,10 +349,24 @@
         </div>
         <div class="sort_buttons">
           <button class="sort_block">
-            <img src="./svg/sort_block.svg" alt="" class="sort_img">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="sort_block_svg">
+              <path d="M14.6667 5.68V2.65334C14.6667 1.71334 14.24 1.33334 13.18 1.33334H10.4867C9.42667 1.33334 9 1.71334 9 2.65334V5.67334C9 6.62 9.42667 6.99334 10.4867 6.99334H13.18C14.24 7 14.6667 6.62 14.6667 5.68Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14.6667 13.18V10.4867C14.6667 9.42667 14.24 9 13.18 9H10.4867C9.42667 9 9 9.42667 9 10.4867V13.18C9 14.24 9.42667 14.6667 10.4867 14.6667H13.18C14.24 14.6667 14.6667 14.24 14.6667 13.18Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7.00016 5.68V2.65334C7.00016 1.71334 6.5735 1.33334 5.5135 1.33334H2.82016C1.76016 1.33334 1.3335 1.71334 1.3335 2.65334V5.67334C1.3335 6.62 1.76016 6.99334 2.82016 6.99334H5.5135C6.5735 7 7.00016 6.62 7.00016 5.68Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7.00016 13.18V10.4867C7.00016 9.42667 6.5735 9 5.5135 9H2.82016C1.76016 9 1.3335 9.42667 1.3335 10.4867V13.18C1.3335 14.24 1.76016 14.6667 2.82016 14.6667H5.5135C6.5735 14.6667 7.00016 14.24 7.00016 13.18Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
           </button>
           <button class="sort_row">
-            <img src="./svg/sort_row.svg" alt="" class="sort_img">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="sort_row_svg">
+              <path d="M2 3H14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 6H14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 9.33334H14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 12.6667H14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 2.66666H14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 6.33334H14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 9.66666H14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 13H14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </button>
         </div>
       </div>
@@ -445,7 +459,7 @@
           </div>
         </div>
         
-        <!-- <div class="catalog_box_wrapper">
+        <div class="catalog_box_wrapper" id="catalog_box_wrapper">
           <div class="card_container">     
             <div class="card_item">
               <span class="small_span sale">Скидка</span>
@@ -790,9 +804,9 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
 
-        <div class="catalog_row_wrapper">
+        <div class="catalog_row_wrapper" id="catalog_row_wrapper">
           <div class="catalog_row_container">
             <img src="./images/card_row.png" alt="" class="catalog_row_img">
             <div class="card_row_text_group">
@@ -914,7 +928,27 @@
           </div>
         </div>
       </div>
-      
+      <div class="catalog_show_more">
+        <button class="button_show_more">Показать еще</button>
+      </div>
+      <div class="brands_pagination">
+        <div class="pagination">
+          <img src="./svg/arrow-small-left.svg" alt="" class="brand_pagination">
+          <span class="brand_pagination brand_pagination_active">1</span>
+          <span class="brand_pagination">2</span>
+          <span class="brand_pagination">3</span>
+          <span class="brand_pagination">4</span>
+          <span class="brand_pagination">5</span>
+          <span class="brand_pagination">6</span>
+          <span class="brand_pagination">...</span>
+          <span class="brand_pagination">15</span>
+          <img src="./svg/arrow-small-right.svg" alt="" class="brand_pagination">
+        </div>
+        <div class="catalog_to_show">
+          <span class="to_show_span">Показывать по 11</span>
+          <img src="./svg/to_show.svg" alt="" class="to_show_img">
+        </div>
+      </div>
     </section>
 
     <section class="cards_section">

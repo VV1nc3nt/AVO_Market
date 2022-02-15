@@ -15,3 +15,8 @@ function showDropdownInput() {
 function showDropdownCheckbox() {
   document.getElementById("checkbox_wrapper").classList.toggle("checkbox_wrapper_show"); 
 }
+
+function boxToRow() {
+  let box = document.getElementById("catalog_box_wrapper");
+  let row = document.getElementById("catalog_row_wrapper");
+}
