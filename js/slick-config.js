@@ -4,7 +4,8 @@ $(document).ready(function(){
     autoplay: true,
     autoplaySpeed: 5000,
     pauseOnHover: true,
-    pauseOnDotsHover: true
+    pauseOnDotsHover: true,
+    lazyLoad: "progressive"
   });
   $('.popular_container_slider').slick({
     slidesToShow: 5,

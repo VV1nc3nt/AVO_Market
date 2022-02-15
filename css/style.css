@@ -285,7 +285,7 @@ input:-moz-placeholder { /* Firefox 18- */
 
 .bubble_box {
   position: absolute;
-  z-index: 12;
+  z-index: 112;
   top: 50px;
   left: -228px;
   display: none;
@@ -454,7 +454,7 @@ input:-moz-placeholder { /* Firefox 18- */
 
 .dropdown__hidden {
   position: absolute;
-  z-index: 5; 
+  z-index: 105; 
   right: 0;
   top: 130px;
   width: 100%;
@@ -1923,6 +1923,7 @@ input:-moz-placeholder { /* Firefox 18- */
 .vacancies_box {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 32px;
 }
 
 .vacancies > .card_title_container {
@@ -1995,6 +1996,7 @@ input:-moz-placeholder { /* Firefox 18- */
   padding: 24px;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
   border-radius: 11px;
+  margin-top: 32px;
 }
 
 .vacancy_content {
@@ -2189,6 +2191,10 @@ input:-moz-placeholder { /* Firefox 18- */
   margin: 0 auto 112px;
 }
 
+.return_rules {
+  margin-top: 32px;
+}
+
 .return > .card_title_container {
   margin-top: 80px;
 }
@@ -2235,6 +2241,7 @@ input:-moz-placeholder { /* Firefox 18- */
 .guarantee_content {
   display: flex;
   justify-content: space-between;
+  margin-top: 32px;
 }
 
 .guarantee_rule {
@@ -2741,14 +2748,6 @@ input:checked + .slider:before {
   cursor: pointer;
 }
 
-.sort_block_svg {
-  stroke: #374957;
-}
-
-.sort_row_svg {
-  stroke: #E6E6E6;
-}
-
 .card_container:nth-child(n + 5) {
   margin-top: 8px;
 }
@@ -3041,10 +3040,18 @@ input:checked + .slider:before {
   margin-right: 8px;
 }
 
-#catalog_box_wrapper {
+#catalog_row_wrapper {
   display: none;
 }
 
-#catalog_row_wrapper {
-  display: none;
+.sort_block_svg {
+  stroke: #374957;
+}
+
+.sort_row_svg {
+  stroke: #E6E6E6;
+}
+
+.cards_section .card_title_container {
+  margin-bottom: 20px;
 }
