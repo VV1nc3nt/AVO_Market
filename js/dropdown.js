@@ -19,20 +19,20 @@ window.onclick = function (event) {
 function showDropdownInput() {
   document.getElementById("price_input").classList.toggle("price_input_show");
   let arrowSvg = document.getElementById("category_dropdown");
-  if (arrowSvg.getAttribute("src") === "../svg/arrow_bot.svg") {
-    arrowSvg.setAttribute("src", "../svg/arrow_top.svg");
+  if (arrowSvg.getAttribute("src") === "./svg/arrow_bot.svg") {
+    arrowSvg.setAttribute("src", "./svg/arrow_top.svg");
   } else {
-    arrowSvg.setAttribute("src", "../svg/arrow_bot.svg");
+    arrowSvg.setAttribute("src", "./svg/arrow_bot.svg");
   }
 }
 
 function showDropdownCheckbox() {
   document.getElementById("checkbox_wrapper").classList.toggle("checkbox_wrapper_show"); 
   let arrowSvg = document.getElementById("checkbox_dropdown");
-  if (arrowSvg.getAttribute("src") === "../svg/arrow_bot.svg") {
-    arrowSvg.setAttribute("src", "../svg/arrow_top.svg");
+  if (arrowSvg.getAttribute("src") === "./svg/arrow_bot.svg") {
+    arrowSvg.setAttribute("src", "./svg/arrow_top.svg");
   } else {
-    arrowSvg.setAttribute("src", "../svg/arrow_bot.svg");
+    arrowSvg.setAttribute("src", "./svg/arrow_bot.svg");
   }
 }
 
