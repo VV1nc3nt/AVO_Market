@@ -3057,3 +3057,58 @@ input:checked + .slider:before {
 .cards_section .card_title_container {
   margin-bottom: 20px;
 }
+
+.item_container {
+  width: 1392px;
+  margin: 0 auto;
+}
+
+.item_top_left {
+  width: 720px;
+  padding: 16px 16px 40px;
+  border: 1px solid #F8F8F8;
+  border-radius: 11px;
+}
+
+.item_top_header {
+  display: flex;
+  justify-content: space-between;
+  width: 688px;
+}
+
+.item_top_span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  font-style: normal;
+  line-height: 16px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.item_top_new {
+  background-color: #A500FF;
+}
+
+.item_top_sale {
+  background-color: #FF3D00;
+}
+
+.item_top_btn_group {
+  display: flex;
+}
+
+.item_top_spans {
+  display: flex;
+  justify-content: space-between;
+  width: 152px;
+}
+
+.plug {
+  margin-left: 64px;
+}
