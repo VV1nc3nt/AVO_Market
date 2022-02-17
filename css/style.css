@@ -1122,14 +1122,17 @@ input:-moz-placeholder { /* Firefox 18- */
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 20px;
   font-style: normal;
   line-height: 16px;
   color: #374957;
 
   background-color: #FFA500;
-  padding: 14px 16px;
-  border-radius: 100px;  
+  padding: 8px 10.5px;
+  border-radius: 100px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* -------------SLIDER CARDS-------------- */
