@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body id="body">
+  <header class="header">
+    
+    <div class="top_header_container">
+      <div class="top_header">
+        <ul class="top_header_ul">
+          <li class="top_header_li"><a href="" class="top_header_link">О компании</a></li>
+          <li class="top_header_li"><a href="./vacancies.html" class="top_header_link">Вакансии</a></li>
+          <li class="top_header_li"><a href="" class="top_header_link">Контакты</a></li>
+          <li class="top_header_li"><a href="./return.html" class="top_header_link">Возврат и обмен товара</a></li>
+          <li class="top_header_li"><a href="./guarantee.html" class="top_header_link">Гарантия</a></li>
+        </ul>
+        <ul class="top_header_contacts">
+          <li class="top_header_li"><a href="" class="top_header_contact">Химки, Нагорное шоссе, 2Б</a></li>
+          <li class="top_header_li"><a href="mailto:info@avomarket.ru" class="top_header_contact">info@avomarket.ru</a></li>
+          <li class="top_header_li"><a href="tel:+79262451645" class="top_header_contact tel">8 (926) 245 16 45</a></li>
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+    <div class="mid_header_container">
+      <div class="mid_header">
+        <a href="./index.html" class="logo_link">
+          <img src="./svg/header_logo.svg" alt="" class="logo">
+        </a>
+        <div class="dropdown_menu">
+          <button onclick="showDropdown()" class="btn btn_menu" id="btn_catalog">
+            <img src="./svg/menu-burger.svg" alt="" class="btn_burger" id="btn_catalog_img">
+            <span class="btn_text">Каталог</span>
+          </button>
+          <div class="dropdown__hidden" id="dropdown">
+            <div class="dropdown_container">
+              <div class="menu_sections">
+                <span class="menu_section menu_promotion">Акции</span>
+                <span class="menu_section">Сантехника</span>
+                <span class="menu_section">Свет</span>
+                <span class="menu_section">Мебель</span>
+              </div>
+              <div class="menu_lines">
+                <div class="menu_line">
+                  <div class="menu_column">
+                    <div class="menu_box">
+                      <a href="" class="menu_header">Смесители</a>
+                      <a href="" class="menu_category">Для кухни</a>
+                      <a href="" class="menu_category">Для раковины</a>
+                      <a href="" class="menu_category">Для ванны и душа</a>
+                      <a href="" class="menu_category">Для душа</a>
+                      <a href="" class="menu_category">Для биде</a>
+                      <a href="" class="menu_category">Гигиенические души</a>
+                      <a href="" class="menu_category">Встраиваемые смесители</a>
+                      <a href="" class="menu_category">Комплекты смесителей</a>
+                      <a href="" class="menu_category">Кран для питьевой воды</a>
+                    </div>
+                  </div>
+                  <div class="menu_column">
+                    <div class="menu_box">
+                      <a href="" class="menu_header">Мебель для ванной</a>
+                      <a href="" class="menu_category">Мебельные гарнитуры</a>
+                      <a href="" class="menu_category">Тумбы с раковиной</a>
+                      <a href="" class="menu_category">Слив и канализация</a>
+                      <a href="" class="menu_category">Шкафы-пеналы</a>
+                      <a href="" class="menu_category">Зеркала</a>
+                      <a href="" class="menu_category">Зеркала-шкафы</a>
+                      <a href="" class="menu_category">Полки под зеркало</a>
+                      <a href="" class="menu_category">Светильники</a>
+                      <a href="" class="menu_category">Шкафы</a>
+                      <a href="" class="menu_category">Комоды</a>
+                      <a href="" class="menu_category">Тумбы</a>
+                    </div>
+                  </div>
+                  <div class="menu_column">
+                    <div class="menu_box">
+                      <a href="" class="menu_header">Ванны и комплектующие</a>
+                      <a href="" class="menu_category">Ванны</a>
+                      <a href="" class="menu_category">Сливы-переливы</a>
+                      <a href="" class="menu_category">Душ настенного монтажа</a>
+                      <a href="" class="menu_category">Встраиваемые душевые системы для ванны</a>
+                      <a href="" class="menu_category">Напольные душевые системы</a>
+                      <a href="" class="menu_category">Экран для ванн</a>
+                      <a href="" class="menu_category">Карнизы для шторок</a>
+                      <a href="" class="menu_category">Шторки текстильные</a>
+                      <a href="" class="menu_category">Шторки стеклянные</a>
+                      <a href="" class="menu_category">Бордюры</a>
+                      <a href="" class="menu_category">Аксессуары для ванны</a>
+                    </div>
+                  </div>
+                  <div class="menu_column">
+                    <div class="menu_box">
+                      <a href="" class="menu_header">Полотенцесушители</a>
+                      <a href="" class="menu_category">Водяные</a>
+                      <a href="" class="menu_category">Электрические</a>
+                    </div>
+                    <div class="menu_box">
+                      <a href="" class="menu_header">Кухонные мойки</a>
+                      <a href="" class="menu_category">Кухонные мойки</a>
+                      <a href="" class="menu_category">Смесители для кухни</a>
+                      <a href="" class="menu_category">Измельчитель отходов</a>
+                      <a href="" class="menu_category">Фильтры для воды и кулеры</a>
+                      <a href="" class="menu_category">Аксессуары для моек</a>
+                    </div>
+                    <div class="menu_box">
+                      <a href="" class="menu_header">Санфаянс</a>
+                    </div>
+                    <div class="menu_box">
+                      <a href="" class="menu_header">Подводка</a>
+                    </div>
+                    <div class="menu_box">
+                      <a href="" class="menu_header">Насосы</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu_line">
+                  <div class="menu_column">
+                    <div class="menu_box">
+                      <a href="" class="menu_header">Слив и канализации</a>
+                      <a href="" class="menu_category">Сифоны</a>
+                      <a href="" class="menu_category">Гофры и отводы</a>
+                      <a href="" class="menu_category">Сливы-переливы</a>
+                      <a href="" class="menu_category">Душевые лотки</a>
+                      <a href="" class="menu_category">Донные клапаны</a>
+                      <a href="" class="menu_category">Измельчитель отходов</a>
+                      <a href="" class="menu_category">Инсталляции и кнопки смыва</a>
+                      <a href="" class="menu_category">Ревизионные люки</a>
+                      <a href="" class="menu_category">Сантехнические шкафы</a>
+                      <a href="" class="menu_category">Системы защиты от протечек</a>
+                    </div>
+                  </div>
+                  <div class="menu_column">
+                    <div class="menu_box">
+                      <a href="" class="menu_header">Инсталляции</a>
+                      <a href="" class="menu_category">Инсталляции для унитазов</a>
+                      <a href="" class="menu_category">Инсталляции для биде</a>
+                      <a href="" class="menu_category">Инсталляции для писсуаров</a>
+                      <a href="" class="menu_category">Инсталляции для раковин</a>
+                      <a href="" class="menu_category">Смывные бачки для скрытого монтажа</a>
+                      <a href="" class="menu_category">Кнопки смыва</a>
+                      <a href="" class="menu_category">Механизмы смыва для писсуаров</a>
+                    </div>
+                  </div>
+                  <div class="menu_column">
+                    <div class="menu_box">
+                      <a href="" class="menu_header">Системы бытовой фильтрации</a>
+                      <a href="" class="menu_category">Фильтры под мойку</a>
+                      <a href="" class="menu_category">Фильтры рядом с мойкой</a>
+                      <a href="" class="menu_category">Краны для питьевой воды</a>
+                      <a href="" class="menu_category">Картриджи к фильтрам питьевой воды</a>
+                      <a href="" class="menu_category">Фильтры-кувшины</a>
+                      <a href="" class="menu_category">Магистральные фильтры грубой очистки</a>
+                      <a href="" class="menu_category">Картриджи к магистральным фильтрам</a>
+                      <a href="" class="menu_category">Магистральные фильтры тонкой очистки</a>
+                      <a href="" class="menu_category">Кулеры и пурифайеры</a>
+                    </div>
+                  </div>
+                  <div class="menu_column">
+                    <div class="menu_box">
+                      <a href="" class="menu_header">Аксессуары</a>
+                      <a href="" class="menu_category">Для раковины</a>
+                      <a href="" class="menu_category">Для туалета</a>
+                      <a href="" class="menu_category">Для полотенец</a>
+                      <a href="" class="menu_category">Для душа</a>
+                      <a href="" class="menu_category">Для ванны</a>
+                      <a href="" class="menu_category">Коврики</a>
+                      <a href="" class="menu_category">Хранение</a>
+                      <a href="" class="menu_category">Стирка</a>
+                      <a href="" class="menu_category">Сиденья</a>
+                      <a href="" class="menu_category">Стремянки</a>
+                      <a href="" class="menu_category">Наборы аксессуаров</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <form action="" class="search_form">
+          <input type="search" name="search_field" placeholder="Поиск товара" class="search_field" required>
+          <button class="btn_search" type="submit">
+            <span class="btn_search_text">Найти</span>
+          </button>
+        </form>
+        <div class="bubble_block">
+          <a href="" class="btn_small btn_comparation">
+            <img src="./svg/comparation.svg" alt="" class="btn_small_img">
+          </a>
+          <div class="bubble_box">
+            <div class="bubble_content">
+              <h2 class="bubble_header">Сравнение</h2>
+              <div class="bubble_lines">
+                <div class="bubble_line">
+                  <img src="./images/comp_img.png" alt="" class="bubble_img">
+                  <span class="bubble_item">Смеситель Victoria+Albert Tubo 15</span>
+                  <span class="bubble_price">170 000 ₽</span>
+                  <img src="./svg/trash.svg" alt="" class="bubble_delete">
+                </div>
+                <div class="bubble_line">
+                  <img src="./images/comp_img.png" alt="" class="bubble_img">
+                  <span class="bubble_item">Смеситель Victoria+Albert Tubo 15</span>
+                  <span class="bubble_price">170 000 ₽</span>
+                  <img src="./svg/trash.svg" alt="" class="bubble_delete">
+                </div>
+              </div>
+            </div>
+            <div class="bubble_btn_box">
+              <a href="" class="btn_bubble">Перейти в сравнение</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bubble_block">
+          <a href="" class="btn_small">
+            <img src="./svg/heart.svg" alt="" class="btn_small_img">
+          </a>
+          <div class="bubble_box">
+            <div class="bubble_content">
+              <h2 class="bubble_header">Избранное</h2>
+              <div class="bubble_lines">
+                <div class="bubble_line">
+                  <img src="./images/comp_img.png" alt="" class="bubble_img">
+                  <span class="bubble_item">Смеситель Victoria+Albert Tubo 15</span>
+                  <span class="bubble_price">170 000 ₽</span>
+                  <img src="./svg/trash.svg" alt="" class="bubble_delete">
+                </div>
+              </div>
+            </div>
+            <div class="bubble_btn_box">
+              <a href="" class="btn_bubble">Перейти в избранное</a>
+            </div>
+          </div>
+        </div>
+        <div class="bubble_block">
+          <a href="" class="btn_small">
+            <img src="./svg/shopping-cart.svg" alt="" class="btn_small_img">
+          </a>
+          <div class="bubble_box">
+            <div class="bubble_content">
+              <h2 class="bubble_header">Корзина</h2>
+              <div class="bubble_lines">
+                <div class="bubble_line">
+                  <img src="./images/comp_img.png" alt="" class="bubble_img">
+                  <span class="bubble_item">Смеситель Victoria+Albert Tubo 15</span>
+                  <span class="bubble_price">170 000 ₽</span>
+                  <img src="./svg/trash.svg" alt="" class="bubble_delete">
+                </div>
+                <div class="bubble_line">
+                  <img src="./images/comp_img.png" alt="" class="bubble_img">
+                  <span class="bubble_item">Смеситель Victoria+Albert Tubo 15</span>
+                  <span class="bubble_price">170 000 ₽</span>
+                  <img src="./svg/trash.svg" alt="" class="bubble_delete">
+                </div>
+                <div class="bubble_line">
+                  <img src="./images/comp_img.png" alt="" class="bubble_img">
+                  <span class="bubble_item">Смеситель Victoria+Albert Tubo 15</span>
+                  <span class="bubble_price">170 000 ₽</span>
+                  <img src="./svg/trash.svg" alt="" class="bubble_delete">
+                </div>
+                <div class="bubble_line">
+                  <img src="./images/comp_img.png" alt="" class="bubble_img">
+                  <span class="bubble_item">Смеситель Victoria+Albert Tubo 15</span>
+                  <span class="bubble_price">170 000 ₽</span>
+                  <img src="./svg/trash.svg" alt="" class="bubble_delete">
+                </div>
+                <div class="bubble_line">
+                  <img src="./images/comp_img.png" alt="" class="bubble_img">
+                  <span class="bubble_item">Смеситель Victoria+Albert Tubo 15</span>
+                  <span class="bubble_price">170 000 ₽</span>
+                  <img src="./svg/trash.svg" alt="" class="bubble_delete">
+                </div>
+              </div>
+            </div>
+            <div class="bubble_btn_box">
+              <div class="bubble_price_box">
+                <span class="bubble_span">Итого:</span>
+                <span class="bubble_sum">10000000 ₽</span>
+              </div>
+              <a href="" class="btn_bubble btn_order">Оформить заказ</a>
+            </div>
+          </div>
+        </div>
+        <a href="" class="btn btn_callback">
+          <span class="btn_text">Заказать звонок</span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="bottom_header">
+      <nav class="menu">
+        <ul class="menu_ul">
+          <li class="menu_li"><a href="" class="menu_link discount_link">Акции</a></li>
+          <li class="menu_li"><a href="" class="menu_link">Свет</a></li>
+          <li class="menu_li"><a href="" class="menu_link">Сантехника</a></li>
+          <li class="menu_li"><a href="" class="menu_link">Мебель</a></li>
+          <li class="menu_li"><a href="./brand.html" class="menu_link">Бренды</a></li>
+          <li class="menu_li"><a href="" class="menu_link">Партнерам</a></li>
+          <li class="menu_li"><a href="" class="menu_link">Доставка и Оплата</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="page_map">
+      <a href="./index.html" class="page_way">Главная</a>
+      <img src="./svg/arrow-small-right.svg" alt="" class="way_arrow">
+      <a href="./brand.html" class="page_way page_way_active">О компании</a>
+    </section>
+
+    <section class="about_company">
+      <h1 class="item_name">О компании</h1>
+      <div class="about_company_wrapper">
+        <div class="about_company_text_wrapper">
+          <p class="about_company_text">Мы вышли на рынок как небольшая розничная точка по продаже сантехники. Уже через два года появился сайт, а 24 мая 2010 года на santehnika-online.ru была сделана первая покупка — душевая кабина.</p>
+          <p class="about_company_text">Мы улучшали наши услуги и совершенствовали сервисы интернет-магазина. За 10 лет в десятки раз вырос наш ассортимент. Мы создали удобную навигацию по сайту, чтобы покупателям легче было сделать единственно верный выбор; наладили доставку по всей России и в Казахстан; в помощь клиентам привлекли к сотрудничеству дизайнеров; организовали работу контакт-центра так, чтобы каждый клиент получил профессиональную консультацию в любую минуту независимо от часового пояса, в котором он живет.</p>
+          <p class="about_company_text">Сейчас “AVO-MARKET” — лидер рынка сантехнических товаров. Обращаясь к нам, можете быть уверены — мы поможем создать идеальное пространство для жизни.</p>
+        </div>
+        <img src="./svg/logo_big.svg" alt="" class="about_company_img">
+      </div>
+    </section>
+
+    <section class="about_benefits">
+      <h1 class="item_name">Наши преимущества</h1>
+      <div class="about_benefits_wrapper">
+        <div class="about_benefits_item">
+          <img src="./svg/truck-time.svg" alt="" class="about_benefits_img">
+          <h3 class="about_benefits_span">Быстрая доставка</h3>
+        </div>
+        <div class="about_benefits_item">
+          <img src="./svg/empty-wallet-tick.svg" alt="" class="about_benefits_img">
+          <h3 class="about_benefits_span">Удобная оплата</h3>
+        </div>
+        <div class="about_benefits_item">
+          <img src="./svg/shield-tick.svg" alt="" class="about_benefits_img">
+          <h3 class="about_benefits_span">Гарантия качества</h3>
+        </div>
+        <div class="about_benefits_item">
+          <img src="./svg/box-tick.svg" alt="" class="about_benefits_img">
+          <h3 class="about_benefits_span">Всегда в наличии</h3>
+        </div>
+        <div class="about_benefits_item">
+          <img src="./svg/clipboard-tick.svg" alt="" class="about_benefits_img">
+          <h3 class="about_benefits_span">Официальные поставки</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="about_requisites">
+      <h1 class="item_name">Наши реквизиты</h1>
+      <div class="about_requisites_wrapper">
+        <ul class="card_row_ul item_top_ul">
+          <li class="card_row_li item_top_li"><span class="row_li_name">Полное наименование</span><span class="row_li_value">ИП Садовников Дмитрий Леонидович</span></li>
+          <li class="card_row_li item_top_li"><span class="row_li_name">Сокращеное наименование</span><span class="row_li_value">ИП «Садовников Д.Л.»</span></li>
+          <li class="card_row_li item_top_li"><span class="row_li_name">Адрес</span><span class="row_li_value">Российская Федерация, 141410, МОСКОВСКАЯ ОБЛ, Г ХИМКИ, ПР-КТ МЕЛЬНИКОВА, дом 21/1, кв. 93</span></li>
+          <li class="card_row_li item_top_li"><span class="row_li_name">Телефон</span><span class="row_li_value">+7 926 245-16-45</span></li>
+          <li class="card_row_li item_top_li"><span class="row_li_name">Электронная почта</span><span class="row_li_value">info@avo-market.ru</span></li>
+          <li class="card_row_li item_top_li"><span class="row_li_name">ОГРН</span><span class="row_li_value">320508100327580</span></li>
+          <li class="card_row_li item_top_li"><span class="row_li_name">ИНН</span><span class="row_li_value">504709057086</span></li>
+          <li class="card_row_li item_top_li"><span class="row_li_name">КПП</span><span class="row_li_value">504709057086</span></li>
+          <li class="card_row_li item_top_li"><span class="row_li_name">ОКПО</span><span class="row_li_value">40769986</span></li>
+          <li class="card_row_li item_top_li"><span class="row_li_name">Банк</span><span class="row_li_value">ТОЧКА ПАО БАНКА "ФК ОТКРЫТИЕ"</span></li>
+          <li class="card_row_li item_top_li"><span class="row_li_name">Р/с почта</span><span class="row_li_value">40802810002500137309</span></li>
+          <li class="card_row_li item_top_li"><span class="row_li_name">К/с</span><span class="row_li_value">30101810845250000999</span></li>
+          <li class="card_row_li item_top_li"><span class="row_li_name">БИК</span><span class="row_li_value">044525999</span></li>
+        </ul>
+        <div class="item_payment_delivery_wrapper">
+          <div class="item_payment_delivery_img_wrapper">
+            <img src="./svg/document.svg" alt="" class="item_payment_delivery_img">
+          </div>
+          <span class="item_payment_delivery_cat_req">Скачать реквизиты</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about_callback_contacts">
+      <div class="about_contacts">
+        <h1 class="item_name">Контакты</h1>
+        <div class="about_contacts_wrapper">
+          <img src="./images/plug_map.png" alt="" class="plug_map">
+        </div>
+      </div>
+      <div class="about_callback">
+        <h1 class="item_name">Обратная связь</h1>
+        <div class="about_callback_wrapper">
+          <p class="about_callback_text">Если у вас остались вопросы или есть предложения, заполните форму ниже и мы обязательно свяжемся с вами!</p>
+          <form action="" class="callback_form">
+            <div class="callback_form_row">
+              <input required type="text" class="callback_form_input" placeholder="Имя*">
+              <input type="text" class="callback_form_input" placeholder="Телефон">
+            </div>
+            <div class="callback_form_row">
+              <input required type="email" class="callback_form_input" placeholder="Электронная почта*">
+              <input type="text" class="callback_form_input" placeholder="Тема обращения">
+            </div>
+            <textarea name="" class="callback_textarea" placeholder="Сообщение"></textarea>
+            <div class="callback_submit_btn_wrapper">
+              <input type="button" value="Заказать звонок" class="callback_submit_btn">
+              <p class="callback_submit_text">Нажимая «Заказать звонок», вы соглашаетесь предоставить Вашу информацию на обработку.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+
+  <footer class="footer">
+    <div class="footer_container">
+      <div class="flex_group">
+        <img src="./svg/footer_logo.svg" alt="" class="footer_logo">
+      </div>
+      <div class="flex_group">
+        <ul class="flex_ul">
+          <li class="flex_li"><a href="" class="flex_link_header">О нас</a></li>
+          <li class="flex_li"><a href="" class="flex_link">О компании</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Акции</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Партнерам</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Вакансии</a></li>
+        </ul>
+        <ul class="flex_ul">
+          <li class="flex_li"><a href="" class="flex_link_header">Информация</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Гарантия</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Возврат и обмен товара</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Доставка и Оплата</a></li>
+        </ul>
+      </div>
+      <div class="flex_group">
+        <ul class="flex_ul">
+          <li class="flex_li"><a href="" class="flex_link_header">Свет</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Люстры</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Светильники</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Бра и подсветки</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Настольные лампы</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Споты</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Торшеры</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Трековые системы</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Светодиодная подсветка</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Уличное освещение</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Офисное освещение</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Лампочки</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Техническое освещение</a></li>
+        </ul>
+      </div>
+      <div class="flex_group">
+        <ul class="flex_ul">
+          <li class="flex_li"><a href="" class="flex_link_header">Сантехника</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Смесители</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Мебель для ванной</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Аксессуары</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Ванны</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Кухонные мойки</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Санфаянс</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Инсталляции</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Слив и канализации</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Насосы</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Подводка</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Системы бытовой фильтрации</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Полотенцесушители</a></li>
+        </ul>
+      </div>
+      <div class="flex_group">
+        <ul class="flex_ul">
+          <li class="flex_li"><a href="" class="flex_link_header">Мебель</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Тумбы с раковиной</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Тумбы под раковину</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Зеркала</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Зеркальные шкафы</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Пеналы</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Подвесные шкафы</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Комоды</a></li>
+          <li class="flex_li"><a href="" class="flex_link">Комплекты мебели</a></li>
+        </ul>
+      </div>
+      <div class="flex_group">
+        <ul class="flex_ul">
+          <li class="flex_li"><a href="" class="flex_link_header">Контакты</a></li>
+          <li class="flex_li"><a href="tel:+79262451645" class="flex_adr">8 (926) 245 16 45</a></li>
+          <li class="flex_li"><a href="" class="flex_adr">Химки, Нагорное шоссе, 2Б</a></li>
+          <li class="flex_li"><a href="mailto:info@avomarket.ru" class="flex_adr">info@avomarket.ru</a></li>
+        </ul>
+        <ul class="footer_socials">
+          <li class="footer_social"><a href="" class="social"><img src="./svg/instagram.svg" alt="" class="social_svg"></a></li>
+          <li class="footer_social"><a href="" class="social"><img src="./svg/facebook.svg" alt="" class="social_svg"></a></li>
+          <li class="footer_social"><a href="" class="social"><img src="./svg/whatsapp.svg" alt="" class="social_svg"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border_top"></div>
+    <div class="copyright">
+      <a href="" class="copyright_link">2011-2022</a>
+      <a href="./politics.html" class="copyright_link">Политика конфиденциальности</a>
+      <a href="" class="copyright_link">Разработано в Everywin</a>
+    </div>
+  </footer>
+  <script src="./js/dropdown.js"></script>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/slick-config.js"></script>
+  <script src="./js/number-inputs.js"></script>
+</body>
+</html>
