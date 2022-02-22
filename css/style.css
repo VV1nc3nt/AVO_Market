@@ -3807,3 +3807,32 @@ input:checked + .slider:before {
   margin-top: 32px;
   margin-left: 32px;
 }
+
+.contacts {
+  width: 1392px;
+  margin: 0 auto;
+}
+
+.contacts_callback {
+  width: 1392px;
+  margin: 0 auto 112px;
+}
+
+.contacts_callback_wrapper {
+  display: flex;
+}
+
+.contacts_callback_wrapper .callback_submit_btn_wrapper {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.contacts_callback_wrapper .callback_submit_btn_wrapper .callback_submit_btn {
+  margin: 0 0 0 32px;
+}
+
+.contacts_callback .callback_submit_text {
+  margin-top: 8px;
+  margin-left: 1050px;
+}
