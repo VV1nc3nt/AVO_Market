@@ -3562,3 +3562,44 @@ input:checked + .slider:before {
   background-color: #fff;
   border-bottom: 1px solid #fff;
 }
+
+.catalog_main {
+  width: 1392px;
+  margin: 0 auto;
+}
+
+.catalog_main_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.catalog_main_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 336px;
+  height: 200px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 11px;
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+.catalog_main_card:nth-child(4n + 4) {
+  margin-right: 0;
+}
+
+.catalog_main_card:nth-child(n + 5) {
+  margin-top: 16px;
+}
+
+.catalog_card_main_span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 16px;
+  color: #374957;
+}
