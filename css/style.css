@@ -3893,3 +3893,147 @@ input:checked + .slider:before {
   color: #FFA500;
   margin-top: 24px;
 }
+
+.basket_page {
+  width: 1392px;
+  margin: 0 auto 112px;
+  display: flex;
+  flex-direction: column;
+}
+
+.basket_card {
+  display: flex;
+  align-items: center;
+  padding: 32px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 11px;
+}
+
+.basket_card:nth-child(n + 2) {
+  margin-top: 8px;
+}
+
+.basket_item_name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 24px;
+  color: #374957;
+  margin-left: 32px;
+}
+
+.basket_item_price {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 24px;
+  color: #374957;
+  margin-left: 191px;
+}
+
+.basket_input_number {
+  position: relative;
+  width: 128px;
+  margin-left: 32px;
+  margin-right: 60px;
+}
+
+.basket_number {
+  text-align: center;
+  width: 128px;
+  padding: 12px 0 12px 12px;
+  border: 1px solid #EAEAEA;
+  border-radius: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 16px;
+  color: #374957;
+}
+
+.basket_arrow {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 20px;
+  color: #374957;
+  background-color: #ffffff;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+}
+
+.number-minus {
+  top: 12px;
+  left: 12px;
+}
+
+.number-plus {
+  top: 12px;
+  right: 12px;
+}
+
+.basket_delete {
+  display: flex;
+  cursor: pointer;
+}
+
+.basket_delete_text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  font-style: normal;
+  line-height: 16px;
+  color: #8D969D;
+  margin-left: 8px;
+}
+
+.basket_summ {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.basket_summ_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-right: 40px;
+}
+
+.basket_summ_text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 24px;
+  color: #FFA500;
+}
+
+.basket_summ_number {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 24px;
+  color: #FFA500;
+  margin-left: 16px;
+}
+
+.basket_summ_cont_span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 16px;
+  color: #ffffff;
+  display: block;
+  background-color: #374957;
+  padding: 12px 58px;
+  border-radius: 100px;
+  text-decoration: none;
+}

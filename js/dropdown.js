@@ -57,3 +57,13 @@ function rowToBox() {
   box.style.display = "flex";
   boxButton.style.stroke = "#374957";
 }
+
+function arrowDown() {
+  let basketNumber = document.getElementById("basket_number");
+  basketNumber.stepDown();
+}
+
+function arrowUp() {
+  let basketNumber = document.getElementById("basket_number");
+  basketNumber.stepUp();
+}
