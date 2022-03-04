@@ -3954,6 +3954,11 @@ input:checked + .slider:before {
   color: #374957;
 }
 
+.basket_header {
+  width: 1392px;
+  margin: 0 auto;
+}
+
 .basket_arrow {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -4042,7 +4047,9 @@ input:checked + .slider:before {
 .items_in_basket {
   padding: 32px;
   width: 1392px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 11px;
 }
 
 .item_in_basket_head {
@@ -4090,12 +4097,6 @@ input:checked + .slider:before {
   border-bottom: 1px solid #F8F8F8;
 }
 
-.items_in_basket_wrapper {
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
-  border-radius: 11px;
-  padding: 32px;
-}
-
 .items_in_basket_wrapper .basket_summ_wrapper {
   justify-content: flex-start;
   margin-top: 32px;
@@ -4138,4 +4139,184 @@ input:checked + .slider:before {
   font-style: normal;
   line-height: 16px;
   color: #374957;
+}
+
+.contact_pay {
+  width: 1392px;
+  margin: 0 auto 112px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 11px;
+  padding: 32px;
+}
+
+.contact_pay_header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 24px;
+  color: #374957;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #F8F8F8;
+}
+
+.pay_input {
+  border: 1px solid #DCDDDD;
+  border-radius: 100px;
+  padding: 16px;
+  width: 326px;
+  margin-right: 16px;
+}
+
+.pay_input:nth-child(n + 3) {
+  margin-top: 16px;
+}
+
+.pay_input_wrapper {
+  width: 690px;
+  margin: 32px 0 24px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pay_delivery_input_wrapper {
+  display: flex;
+}
+
+.pay_delivery {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin: 16px 32px 0 0;
+}
+
+.pay_delivery_input_text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 16px;
+  color: #374957;
+}
+
+.pay_delivery > .pay_delivery_input {
+  display: none;
+}
+
+.pay_delivery_input_text::before {
+  content: '';
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #F2F2F2;
+  border-radius: 3px;
+  margin-right: 8px;
+  background: #F8F8F8;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.pay_delivery_input:checked + .pay_delivery_input_text::before {
+  border-color: #FFA500;
+  background-color: #FFA500;
+  background-image: url('../svg/checked.svg');
+}
+
+[hidden] { display: none }
+
+.selfdelivery {
+  width: 456px;
+  padding: 16px;
+  border: 1px solid #F2F2F2;
+  border-radius: 11px;
+  margin-top: 24px;
+}
+
+.selfdelivery_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.selfdelivery_header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 16px;
+  color: #374957;
+}
+
+.selfdelivery_block {
+  display: flex;
+  flex-direction: column;
+  width: 183px;
+  margin-top: 16px;
+}
+
+.selfdelivery_block:nth-child(2n + 2) {
+  margin-left: 54px;
+}
+
+.selfdelivery_block_header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  font-style: normal;
+  line-height: 16px;
+  color: #BABEC1;
+  margin-bottom: 8px;
+}
+
+.selfdelivery_block_content {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 16px;
+  color: #374957;
+}
+
+.contact_pay_right_block:nth-child(n + 2) {
+  margin-top: 32px;
+}
+
+.contact_pay_right_attention_header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 16px;
+  color: #FFA500;
+}
+
+.contact_pay_right_header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 16px;
+  color: #374957;
+}
+
+.contact_pay_right_paragraph {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 24px;
+  color: #374957;
+  margin-top: 8px;
+}
+
+.contact_pay_right {
+  margin: 32px 0 0 32px;
+}
+
+.contact_pay_wrapper {
+  display: flex;
+  flex-direction: row;
 }

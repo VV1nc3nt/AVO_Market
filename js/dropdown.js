@@ -67,3 +67,19 @@ function arrowUp() {
   let basketNumber = document.getElementById("basket_number");
   basketNumber.stepUp();
 }
+
+document.addEventListener('change', function(e){
+  if(!e.target.hasAttribute('data-type-legal')) return;
+  autodelivery.hidden = !autodelivery.hidden
+  selfdelivery.hidden = !selfdelivery.hidden
+});
+   if (document.documentElement.hidden === undefined) {
+Object.defineProperty(Element.prototype, "hidden", {
+  set: function(value) {
+    this.setAttribute('hidden', value);
+  },
+  get: function() {
+    return this.getAttribute('hidden');
+  }
+});
+  }

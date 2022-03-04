@@ -316,8 +316,11 @@
       <a href="./brand.html" class="page_way page_way_active">О компании</a>
     </section>
 
-    <section class="items_in_basket">
+    <div class="basket_header">
       <h1 class="item_name">Оформление заказа</h1>
+    </div>
+
+    <section class="items_in_basket">
       <div class="items_in_basket_wrapper">
         <div class="item_in_basket_header">
           <h2 class="item_in_basket_head">Товары в корзине</h2>
@@ -346,6 +349,78 @@
     </section>
 
     <section class="contact_pay">
+      <h2 class="contact_pay_header">Контактная информация и метод оплаты</h2>
+      <div class="contact_pay_wrapper">
+        <div class="contact_pay_left">
+          <div class="contact_pay_input">
+            <div class="pay_input_wrapper">
+              <input type="text" class="pay_input" placeholder="Имя*">
+              <input type="text" class="pay_input" placeholder="Фамилия">
+              <input type="tel" class="pay_input" placeholder="Телефон*">
+              <input type="email" class="pay_input" placeholder="Электронная почта (необязательно)">
+            </div>
+          </div>
+          <h3 class="selfdelivery_header">Выберите способ получения</h3>
+          <div class="pay_delivery_wrapper">
+            <div class="pay_delivery_input_wrapper">
+              <label class="pay_delivery">
+                <input class="pay_delivery_input" type="radio" name="rb" checked data-type-legal>
+                <span class="pay_delivery_input_text">Самовывоз</span>
+              </label>
+              <label class="pay_delivery">
+                <input class="pay_delivery_input" type="radio" name="rb" data-type-legal>
+                <span class="pay_delivery_input_text">Доставка</span>
+              </label>
+            </div>
+            
+            <div id="selfdelivery" class="selfdelivery">
+              <h3 class="selfdelivery_header">Адрес для самовывоза</h3>
+              <div class="selfdelivery_wrapper">
+                <div class="selfdelivery_block">
+                  <span class="selfdelivery_block_header">Адрес:</span>
+                  <span class="selfdelivery_block_content">Химки, Нагорное шоссе, 2Б</span>
+                </div>
+                <div class="selfdelivery_block">
+                  <span class="selfdelivery_block_header">Время работы</span>
+                  <span class="selfdelivery_block_content">Ежедневно с 10.00 до 20.00</span>
+                </div>
+                <div class="selfdelivery_block">
+                  <span class="selfdelivery_block_header">Координаты: </span>
+                  <span class="selfdelivery_block_content">55.89455, 37.40641</span>
+                </div>
+                <div class="selfdelivery_block">
+                  <span class="selfdelivery_block_header">Телефон:</span>
+                  <span class="selfdelivery_block_content">+7 (926) 245 16 45</span>
+                </div>
+              </div>
+            </div>
+            <div id="autodelivery" class="autodelivery" hidden>А здесь контент для юридических лиц, виден, если выбраны юр.лица! Соответственно, блок контента для физ. лиц скрывается.</div>
+          </div>
+        </div>
+        <div class="contact_pay_right">
+          <div class="contact_pay_right_block">
+            <h3 class="contact_pay_right_attention_header">Внимание!</h3>
+            <p class="contact_pay_right_paragraph">Минимальная сумма заказа 5000 рублей.</p>
+          </div>
+          <div class="contact_pay_right_block">
+            <h3 class="contact_pay_right_header">Доставка</h3>
+            <p class="contact_pay_right_paragraph">Доставка осуществляется с понедельника по субботу с 9:00 до 15:00 на следующий день после оформления заказа!</p>
+            <p class="contact_pay_right_paragraph">Доставка по Москве (в пределах МКАД) – 490 руб.</p>
+            <p class="contact_pay_right_paragraph">Доставка за МКАД – 490 р. + 30 р/км.</p>
+          </div>
+          <div class="contact_pay_right_block">
+            <h3 class="contact_pay_right_header">Заказ</h3>
+            <p class="contact_pay_right_paragraph">Заказы оформленные после 16.00 доставляются клиенту и в пункт самовывоза на ВТОРОЙ РАБОЧИЙ день.</p>
+            <p class="contact_pay_right_paragraph">Заказы оформленные в субботу или в воскресение могут быть доставлены клиенту в пункт самовывоза не ранее вторника.</p>
+          </div>
+          <div class="contact_pay_right_block">
+            <h3 class="contact_pay_right_header">Безналичная оплата</h3>
+            <p class="contact_pay_right_paragraph">После оформления заказа с Вами свяжется менеджер и оформит безналичную оплату и вышлет счет на Вашу почту.</p>
+          </div>
+        </div>
+      </div>
+     
+      
       <div class="basket_summ_continue">
         <a href="" class="basket_summ_cont_span">Продолжить</a>
       </div>
