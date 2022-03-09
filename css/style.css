@@ -4485,3 +4485,66 @@ input:checked + .slider:before {
 .delivery_info_price {
   color: #FFA500;
 }
+
+.partners_page_section {
+  width: 1392px;
+  margin: 0 auto 104px;
+  display: flex;
+}
+
+.partners_page_text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 24px;
+  color: #374957;
+  width: 864px;
+}
+
+.partners_page_wrapper {
+  padding: 32px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 11px;
+  width: 464px;
+  margin-left: 64px;
+}
+
+.partners_page_header {
+  display: flex;
+  align-items: center;
+}
+
+.partners_page_span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 24px;
+  color: #374957;
+  margin-left: 16px;
+}
+
+.partners_page_ul {
+  list-style: none;
+  margin-left: 10px;
+}
+
+.partners_page_li {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 24px;
+  color: #374957;
+  margin-top: 16px;
+}
+
+.partners_page_li::before {
+  content: "\2022";
+  color: #FFA500;
+  width: 4px;
+  display: inline-block;
+  margin-left: -13px;
+  padding-right: 8px;
+}
