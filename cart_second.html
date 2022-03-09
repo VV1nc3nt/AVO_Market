@@ -337,6 +337,12 @@
             <h3 class="item_basket_am_span">шт.</h3>
             <h3 class="item_basket_price">188 580 ₽</h3>
           </div>
+          <div class="item_in_basket">
+            <h3 class="item_basket_desc">Подвесная люстра Chiaro Сюзанна 458011012</h3>
+            <h3 class="item_basket_am">1</h3>
+            <h3 class="item_basket_am_span">шт.</h3>
+            <h3 class="item_basket_price">188 580 ₽</h3>
+          </div>
           
         </div>
         <div class="basket_summ_wrapper">
@@ -394,7 +400,26 @@
                 </div>
               </div>
             </div>
-            <div id="autodelivery" class="autodelivery" hidden>А здесь контент для юридических лиц, виден, если выбраны юр.лица! Соответственно, блок контента для физ. лиц скрывается.</div>
+            <div id="autodelivery" class="autodelivery" hidden>
+              <input type="text" placeholder="Адрес доставки*" class="delivery_adress_input">
+              <textarea name="" placeholder="Примечание к заказу" class="delivery_adress_textarea"></textarea>
+            </div>
+          </div>
+          <div class="pay_chose_wrapper">
+            <div class="pay_chose_inside_wrapper">
+              <h3 class="selfdelivery_header">Выберите способ оплаты</h3>
+              <div class="pay_delivery_input_wrapper">
+                <label class="pay_chose">
+                  <input class="pay_chose_input" type="radio" name="rb2" checked>
+                  <span class="pay_chose_input_text">Оплата наличными</span>
+                </label>
+                <label class="pay_chose">
+                  <input class="pay_chose_input" type="radio" name="rb2">
+                  <span class="pay_chose_input_text">Безналичная оплата</span>
+                </label>
+              </div>
+            </div>
+            <button class="pay_chose_continue">Продолжить</button>
           </div>
         </div>
         <div class="contact_pay_right">
@@ -420,9 +445,55 @@
         </div>
       </div>
      
-      
-      <div class="basket_summ_continue">
-        <a href="" class="basket_summ_cont_span">Продолжить</a>
+    </section>
+
+    <section class="all_order_info">
+      <div class="item_in_basket_header">
+        <h2 class="item_in_basket_head">Получатель</h2>
+        <a href="" class="item_pencil">
+          <img src="./svg/pencil.svg" alt="" class="pencil_img">
+          <span class="pencil_span">Изменить</span>
+        </a>
+      </div>
+      <div class="all_order_info_wrapper">
+        <div class="delivery_info_wrapper">
+          <div class="delivery_info_block">
+            <span class="selfdelivery_block_header">Телефон*</span>
+            <span class="selfdelivery_block_content">+7 912 123 45 67</span>
+          </div>
+          <div class="delivery_info_block">
+            <span class="selfdelivery_block_header">Адрес доставки*</span>
+            <span class="selfdelivery_block_content">Москва, ул. Радужная при “поддержке” Президента 77</span>
+          </div>
+          <div class="delivery_info_block">
+            <span class="selfdelivery_block_header">Способ получения</span>
+            <span class="selfdelivery_block_content">Доставка</span>
+          </div>
+          <div class="delivery_info_block">
+            <span class="selfdelivery_block_header">Количество</span>
+            <span class="selfdelivery_block_content">2 товара</span>
+          </div>
+          <div class="delivery_info_block">
+            <span class="selfdelivery_block_header">Электронная почта*</span>
+            <span class="selfdelivery_block_content">info@gmail.com</span>
+          </div>
+          <div class="delivery_info_block">
+            <span class="selfdelivery_block_header">Примечание к заказу</span>
+            <span class="selfdelivery_block_content">Захватите хорошее настроение.</span>
+          </div>
+          <div class="delivery_info_block">
+            <span class="selfdelivery_block_header">Способ оплаты</span>
+            <span class="selfdelivery_block_content">Безналичная оплата</span>
+          </div>
+          <div class="delivery_info_block">
+            <span class="selfdelivery_block_header">Стоимость</span>
+            <span class="selfdelivery_block_content delivery_info_price">176 590 ₽</span>
+          </div>
+        </div>
+        <div class="fix_order_button_wrapper">
+          <button class="fix_order_button">Оформить</button>
+          <p class="fix_order_paragraph">Нажимая «Отправить», вы соглашаетесь предоставить Вашу информацию на обработку.</p>
+        </div>
       </div>
     </section>
   
