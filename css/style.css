@@ -4435,9 +4435,17 @@ input:checked + .slider:before {
 }
 
 .delivery_info_block {
-  width: 250px;
+  width: 180px;
   display: flex;
   flex-direction: column;
+}
+
+.delivery_info_block:nth-child(2) {
+  width: 360px;
+}
+
+.delivery_info_block:nth-child(6) {
+  width: 360px;
 }
 
 .delivery_info_block:nth-child(n + 5) {
@@ -4614,4 +4622,24 @@ input:checked + .slider:before {
   width: 288px;
   text-align: center;
   align-self: center;
+}
+
+.comparasion_page_section {
+  width: 1392px;
+  margin: 0 auto;
+}
+
+.comparasion_page_section .item_top_feature .item_top_ul {
+  height: auto;
+}
+
+.comparasion_page_section .item_top_feature .item_top_ul .item_top_li {
+  width: 240px;
+}
+
+.comparasion_page_card {
+  width: 272px;
+  padding: 16px;
+  border-radius: 11px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
 }
