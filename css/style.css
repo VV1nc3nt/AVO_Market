@@ -4626,7 +4626,12 @@ input:checked + .slider:before {
 
 .comparasion_page_section {
   width: 1392px;
-  margin: 0 auto;
+  margin: 10px auto 112px;
+  padding: 25px 10px;
+  display: flex;
+  overflow-y: visible;
+  overflow-x: scroll;
+  overflow-clip-margin: 10px;
 }
 
 .comparasion_page_section .item_top_feature .item_top_ul {
@@ -4642,4 +4647,110 @@ input:checked + .slider:before {
   padding: 16px;
   border-radius: 11px;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  margin-right: 8px;
+}
+
+.comparasion_page_card .btn_small {
+  align-self: flex-end;
+}
+
+.comparasion_page_img {
+  margin: 15px 0 32px;
+  width: 160px;
+  align-self: center;
+}
+
+.comparasion_item_name {
+  width: 208px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  color: #374957;
+  text-align: center;
+  align-self: center;
+  margin-bottom: 48px;
+}
+
+.comparasion_page_price {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 20px;
+  color: #374957;
+  margin-bottom: 24px;
+  margin-left: 16px;
+}
+
+.comparasion_page_card .row_buy_button {
+  width: 208px;
+  align-self: center;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(55, 73, 87, 0.05);
+}
+
+.comparasion_page_card .row_buy_button .row_buy_orange {
+  width: 152px;
+}
+
+.delete_from_comparasion {
+  background-color: #ffffff;
+  border: 1px solid #FFA500;
+  border-radius: 100px;
+  padding: 12px 25px;
+  margin: 36px 0 16px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 16px;
+  color: #374957;
+}
+
+.add_to_comparasion_btn {
+  background-color: #ffffff;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border: 1px dashed #EAEAEA;
+  border-radius: 11px;
+  width: 272px;
+}
+
+.all_add_to_comparasion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin-top: 132px;
+}
+
+.add_to_comparasion_wrapper {
+  align-self: center;
+  width: 40px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.add_to_comparasion_span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  color: #374957;
+  width: 208px;
+  text-align: center;
+  align-self: center;
 }

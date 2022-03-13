@@ -82,4 +82,4 @@ Object.defineProperty(Element.prototype, "hidden", {
     return this.getAttribute('hidden');
   }
 });
-  }
+}
