@@ -3943,7 +3943,7 @@ input:checked + .slider:before {
 .basket_number {
   text-align: center;
   width: 128px;
-  padding: 12px 0 12px 12px;
+  padding: 12px 0 12px 2px;
   border: 1px solid #EAEAEA;
   border-radius: 100px;
   font-family: 'Roboto', sans-serif;
@@ -4753,4 +4753,13 @@ input:checked + .slider:before {
   width: 208px;
   text-align: center;
   align-self: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
 }
