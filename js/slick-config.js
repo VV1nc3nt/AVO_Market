@@ -33,5 +33,15 @@ $(document).ready(function(){
     appendArrows: $(".btn_arrows_brands"),
     rows: 2
   });
+  $('.item_top_slider_big').slick({
+    slidesToShow: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.item_top_slider'
+  });
+  $('.item_top_slider').slick({
+    slidesToShow: 5,
+    asNavFor: '.item_top_slider_big'
+  });
 });
 	
