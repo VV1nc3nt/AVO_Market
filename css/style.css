@@ -1122,6 +1122,7 @@ textarea:-moz-placeholder { /* Firefox 18- */
   color: #374957;
   position: absolute;
   bottom: 88px;
+  text-decoration: none;
 }
 
 .card_price {
