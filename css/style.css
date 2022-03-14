@@ -1899,6 +1899,10 @@ textarea:-moz-placeholder { /* Firefox 18- */
   margin: 0 auto 112px;
 }
 
+.news_page .card_title_container {
+  margin-bottom: 24px;
+}
+
 .news_inside_box {
   width: 1392px;
   margin-top: 16px;
@@ -1941,6 +1945,7 @@ textarea:-moz-placeholder { /* Firefox 18- */
 
 .three_cards_section {
   width: 864px;
+  display: flex;
 }
 
 .news_attention {
@@ -2337,6 +2342,7 @@ textarea:-moz-placeholder { /* Firefox 18- */
 
 .brands_section > .card_title_container {
   margin-top: 80px;
+  margin-bottom: 40px;
 }
 
 .brand_cards {
@@ -3483,6 +3489,8 @@ input:checked + .slider:before {
 }
 
 .item_documents {
+  display: flex;
+  flex-direction: column;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
   padding: 32px 24px 48px;
   border-radius: 0 11px 11px 11px;
@@ -3884,7 +3892,7 @@ input:checked + .slider:before {
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
-  line-height: 16px;
+  line-height: 24px;
   color: #374957;
   margin-top: 8px;
 }
