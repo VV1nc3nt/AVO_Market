@@ -1953,6 +1953,10 @@ textarea:-moz-placeholder { /* Firefox 18- */
   display: flex;
 }
 
+.three_cards_section .card_container:nth-child(n + 2) {
+  margin-left: 24px
+}
+
 .news_attention {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
