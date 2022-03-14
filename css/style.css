@@ -3711,6 +3711,10 @@ input:checked + .slider:before {
   margin-right: 16px;
 }
 
+.catalog_card_main_img {
+  margin-bottom: 24px;
+}
+
 .catalog_main_card:nth-child(4n + 4) {
   margin-right: 0;
 }
