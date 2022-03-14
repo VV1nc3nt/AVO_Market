@@ -1004,14 +1004,13 @@ textarea:-moz-placeholder { /* Firefox 18- */
 
 .cards_section {
   width: 1392px;
-  margin: 0 auto;
+  margin: 112px auto 62px;
 }
 
 .card_title_container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 112px;
 }
 
 .card_title_text {
@@ -1716,7 +1715,7 @@ textarea:-moz-placeholder { /* Firefox 18- */
 
 .brands {
   width: 1392px;
-  margin: 0 auto;
+  margin: 112px auto 0;
 }
 
 .brands_container {
