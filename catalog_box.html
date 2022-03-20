@@ -387,76 +387,892 @@
       <div class="catalog_box_container">
         <div class="catalog_box_menu_wrapper">
           <div class="catalog_box_menu">
+            <!-- price -->
             <div class="catalog_input">
               <div class="catalog_cat_box_head">
-                <span class="catalog_cat_span">Input</span>
-                <button class="show_catalog" onclick="showDropdownInput()">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Цена</span>
                   <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
                 </button>
-                
+                <div class="price_input" id="price_input">
+                  <input type="text" name="price" placeholder="От 1" class="input_number" min="0">
+                  <input type="text" name="price" placeholder="До 1000000" class="input_number" min="0">
+                </div>  
               </div>
-              <div class="price_input" id="price_input">
-                <input type="text" name="price" placeholder="От 1" class="input_number" min="0">
-                <input type="text" name="price" placeholder="До 1000000" class="input_number" min="0">
-              </div>            
+                        
             </div>
+
             <div class="catalog_checkbox">
               <div class="catalog_cat_box_head">
-                <span class="catalog_cat_span">Checkbox</span>
-                <button class="show_catalog" onclick="showDropdownCheckbox()">
-                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="checkbox_dropdown">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Стиль</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
                 </button>
+                <div class="checkbox_wrapper" id="checkbox_wrapper">
+                  <div class="checkbox_search">
+                    <input type="search" name="search_cat" class="search_cat" placeholder="Поиск по списку">
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom" class="checkbox_custom">
+                    <label for="checkbox_custom" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_1" class="checkbox_custom">
+                    <label for="checkbox_custom_1" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_2" class="checkbox_custom">
+                    <label for="checkbox_custom_2" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_3" class="checkbox_custom">
+                    <label for="checkbox_custom_3" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_4" class="checkbox_custom">
+                    <label for="checkbox_custom_4" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_5" class="checkbox_custom">
+                    <label for="checkbox_custom_5" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_6" class="checkbox_custom">
+                    <label for="checkbox_custom_6" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_7" class="checkbox_custom">
+                    <label for="checkbox_custom_7" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_8" class="checkbox_custom">
+                    <label for="checkbox_custom_8" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_9" class="checkbox_custom">
+                    <label for="checkbox_custom_9" class="checkbox_label">Checkbox</label>
+                  </div>
+                </div>      
               </div>
               
-              <div class="checkbox_wrapper" id="checkbox_wrapper">
-                <div class="checkbox_search">
-                  <input type="search" name="search_cat" class="search_cat" placeholder="Поиск по списку">
-                </div>
-                <div class="checkbox_container">
-                  <input type="checkbox" name="" id="checkbox_custom" class="checkbox_custom">
-                  <label for="checkbox_custom" class="checkbox_label">Checkbox</label>
-                </div>
-                <div class="checkbox_container">
-                  <input type="checkbox" name="" id="checkbox_custom_1" class="checkbox_custom">
-                  <label for="checkbox_custom_1" class="checkbox_label">Checkbox</label>
-                </div>
-                <div class="checkbox_container">
-                  <input type="checkbox" name="" id="checkbox_custom_2" class="checkbox_custom">
-                  <label for="checkbox_custom_2" class="checkbox_label">Checkbox</label>
-                </div>
-                <div class="checkbox_container">
-                  <input type="checkbox" name="" id="checkbox_custom_3" class="checkbox_custom">
-                  <label for="checkbox_custom_3" class="checkbox_label">Checkbox</label>
-                </div>
-                <div class="checkbox_container">
-                  <input type="checkbox" name="" id="checkbox_custom_4" class="checkbox_custom">
-                  <label for="checkbox_custom_4" class="checkbox_label">Checkbox</label>
-                </div>
-                <div class="checkbox_container">
-                  <input type="checkbox" name="" id="checkbox_custom_5" class="checkbox_custom">
-                  <label for="checkbox_custom_5" class="checkbox_label">Checkbox</label>
-                </div>
-                <div class="checkbox_container">
-                  <input type="checkbox" name="" id="checkbox_custom_6" class="checkbox_custom">
-                  <label for="checkbox_custom_6" class="checkbox_label">Checkbox</label>
-                </div>
-                <div class="checkbox_container">
-                  <input type="checkbox" name="" id="checkbox_custom_7" class="checkbox_custom">
-                  <label for="checkbox_custom_7" class="checkbox_label">Checkbox</label>
-                </div>
-                <div class="checkbox_container">
-                  <input type="checkbox" name="" id="checkbox_custom_8" class="checkbox_custom">
-                  <label for="checkbox_custom_8" class="checkbox_label">Checkbox</label>
-                </div>
-                <div class="checkbox_container">
-                  <input type="checkbox" name="" id="checkbox_custom_9" class="checkbox_custom">
-                  <label for="checkbox_custom_9" class="checkbox_label">Checkbox</label>
-                </div>
-              </div>            
+      
             </div>
+
+            <div class="catalog_checkbox">
+              <div class="catalog_cat_box_head">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Интерьер</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                <div class="checkbox_wrapper" id="checkbox_wrapper">
+                  <div class="checkbox_search">
+                    <input type="search" name="search_cat" class="search_cat" placeholder="Поиск по списку">
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom" class="checkbox_custom">
+                    <label for="checkbox_custom" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_1" class="checkbox_custom">
+                    <label for="checkbox_custom_1" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_2" class="checkbox_custom">
+                    <label for="checkbox_custom_2" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_3" class="checkbox_custom">
+                    <label for="checkbox_custom_3" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_4" class="checkbox_custom">
+                    <label for="checkbox_custom_4" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_5" class="checkbox_custom">
+                    <label for="checkbox_custom_5" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_6" class="checkbox_custom">
+                    <label for="checkbox_custom_6" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_7" class="checkbox_custom">
+                    <label for="checkbox_custom_7" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_8" class="checkbox_custom">
+                    <label for="checkbox_custom_8" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_9" class="checkbox_custom">
+                    <label for="checkbox_custom_9" class="checkbox_label">Checkbox</label>
+                  </div>
+                </div>      
+              </div>
+              
+      
+            </div>
+
+            <div class="catalog_input">
+              <div class="catalog_cat_box_head">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Вес (кг)</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                <div class="price_input" id="price_input">
+                  <input type="text" name="price" placeholder="От 1" class="input_number" min="0">
+                  <input type="text" name="price" placeholder="До 1000000" class="input_number" min="0">
+                </div>  
+              </div>
+                        
+            </div>
+
+            <div class="catalog_input">
+              <div class="catalog_cat_box_head">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Длина (см)</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                <div class="price_input" id="price_input">
+                  <input type="text" name="price" placeholder="От 1" class="input_number" min="0">
+                  <input type="text" name="price" placeholder="До 1000000" class="input_number" min="0">
+                </div>  
+              </div>
+                        
+            </div>
+
+            <div class="catalog_input">
+              <div class="catalog_cat_box_head">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Ширина (см)</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                <div class="price_input" id="price_input">
+                  <input type="text" name="price" placeholder="От 1" class="input_number" min="0">
+                  <input type="text" name="price" placeholder="До 1000000" class="input_number" min="0">
+                </div>  
+              </div>
+                        
+            </div>
+
+            <div class="catalog_input">
+              <div class="catalog_cat_box_head">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Высота (см)</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                <div class="price_input" id="price_input">
+                  <input type="text" name="price" placeholder="От 1" class="input_number" min="0">
+                  <input type="text" name="price" placeholder="До 1000000" class="input_number" min="0">
+                </div>  
+              </div>
+                        
+            </div>
+
+            <div class="catalog_input">
+              <div class="catalog_cat_box_head">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Диаметр монтажного отверстия (см)</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                <div class="price_input" id="price_input">
+                  <input type="text" name="price" placeholder="От 1" class="input_number" min="0">
+                  <input type="text" name="price" placeholder="До 1000000" class="input_number" min="0">
+                </div>  
+              </div>
+                        
+            </div>
+
+            <div class="catalog_input">
+              <div class="catalog_cat_box_head">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Глубина монтажного отверстия (см)</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                <div class="price_input" id="price_input">
+                  <input type="text" name="price" placeholder="От 1" class="input_number" min="0">
+                  <input type="text" name="price" placeholder="До 1000000" class="input_number" min="0">
+                </div>  
+              </div>
+                        
+            </div>
+
+            <div class="catalog_checkbox">
+              <div class="catalog_cat_box_head">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Материал арматуры</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                <div class="checkbox_wrapper" id="checkbox_wrapper">
+                  <div class="checkbox_search">
+                    <input type="search" name="search_cat" class="search_cat" placeholder="Поиск по списку">
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom" class="checkbox_custom">
+                    <label for="checkbox_custom" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_1" class="checkbox_custom">
+                    <label for="checkbox_custom_1" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_2" class="checkbox_custom">
+                    <label for="checkbox_custom_2" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_3" class="checkbox_custom">
+                    <label for="checkbox_custom_3" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_4" class="checkbox_custom">
+                    <label for="checkbox_custom_4" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_5" class="checkbox_custom">
+                    <label for="checkbox_custom_5" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_6" class="checkbox_custom">
+                    <label for="checkbox_custom_6" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_7" class="checkbox_custom">
+                    <label for="checkbox_custom_7" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_8" class="checkbox_custom">
+                    <label for="checkbox_custom_8" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_9" class="checkbox_custom">
+                    <label for="checkbox_custom_9" class="checkbox_label">Checkbox</label>
+                  </div>
+                </div>      
+              </div>
+              
+      
+            </div>
+
+            <div class="catalog_checkbox">
+              <div class="catalog_cat_box_head">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Цвета арматуры</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                <div class="checkbox_wrapper" id="checkbox_wrapper">
+                  <div class="checkbox_search">
+                    <input type="search" name="search_cat" class="search_cat" placeholder="Поиск по списку">
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom" class="checkbox_custom">
+                    <label for="checkbox_custom" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_1" class="checkbox_custom">
+                    <label for="checkbox_custom_1" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_2" class="checkbox_custom">
+                    <label for="checkbox_custom_2" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_3" class="checkbox_custom">
+                    <label for="checkbox_custom_3" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_4" class="checkbox_custom">
+                    <label for="checkbox_custom_4" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_5" class="checkbox_custom">
+                    <label for="checkbox_custom_5" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_6" class="checkbox_custom">
+                    <label for="checkbox_custom_6" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_7" class="checkbox_custom">
+                    <label for="checkbox_custom_7" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_8" class="checkbox_custom">
+                    <label for="checkbox_custom_8" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_9" class="checkbox_custom">
+                    <label for="checkbox_custom_9" class="checkbox_label">Checkbox</label>
+                  </div>
+                </div>      
+              </div>
+              
+      
+            </div>
+
+            <div class="catalog_checkbox">
+              <div class="catalog_cat_box_head">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Материал плафонов</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                <div class="checkbox_wrapper" id="checkbox_wrapper">
+                  <div class="checkbox_search">
+                    <input type="search" name="search_cat" class="search_cat" placeholder="Поиск по списку">
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom" class="checkbox_custom">
+                    <label for="checkbox_custom" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_1" class="checkbox_custom">
+                    <label for="checkbox_custom_1" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_2" class="checkbox_custom">
+                    <label for="checkbox_custom_2" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_3" class="checkbox_custom">
+                    <label for="checkbox_custom_3" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_4" class="checkbox_custom">
+                    <label for="checkbox_custom_4" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_5" class="checkbox_custom">
+                    <label for="checkbox_custom_5" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_6" class="checkbox_custom">
+                    <label for="checkbox_custom_6" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_7" class="checkbox_custom">
+                    <label for="checkbox_custom_7" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_8" class="checkbox_custom">
+                    <label for="checkbox_custom_8" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_9" class="checkbox_custom">
+                    <label for="checkbox_custom_9" class="checkbox_label">Checkbox</label>
+                  </div>
+                </div>      
+              </div>
+              
+      
+            </div>
+
+            <div class="catalog_checkbox">
+              <div class="catalog_cat_box_head">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Цвет плафонов</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                <div class="checkbox_wrapper" id="checkbox_wrapper">
+                  <div class="checkbox_search">
+                    <input type="search" name="search_cat" class="search_cat" placeholder="Поиск по списку">
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom" class="checkbox_custom">
+                    <label for="checkbox_custom" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_1" class="checkbox_custom">
+                    <label for="checkbox_custom_1" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_2" class="checkbox_custom">
+                    <label for="checkbox_custom_2" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_3" class="checkbox_custom">
+                    <label for="checkbox_custom_3" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_4" class="checkbox_custom">
+                    <label for="checkbox_custom_4" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_5" class="checkbox_custom">
+                    <label for="checkbox_custom_5" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_6" class="checkbox_custom">
+                    <label for="checkbox_custom_6" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_7" class="checkbox_custom">
+                    <label for="checkbox_custom_7" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_8" class="checkbox_custom">
+                    <label for="checkbox_custom_8" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_9" class="checkbox_custom">
+                    <label for="checkbox_custom_9" class="checkbox_label">Checkbox</label>
+                  </div>
+                </div>      
+              </div>
+              
+      
+            </div>
+
+            <div class="catalog_checkbox">
+              <div class="catalog_cat_box_head">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Форма плафонов</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                <div class="checkbox_wrapper" id="checkbox_wrapper">
+                  <div class="checkbox_search">
+                    <input type="search" name="search_cat" class="search_cat" placeholder="Поиск по списку">
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom" class="checkbox_custom">
+                    <label for="checkbox_custom" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_1" class="checkbox_custom">
+                    <label for="checkbox_custom_1" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_2" class="checkbox_custom">
+                    <label for="checkbox_custom_2" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_3" class="checkbox_custom">
+                    <label for="checkbox_custom_3" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_4" class="checkbox_custom">
+                    <label for="checkbox_custom_4" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_5" class="checkbox_custom">
+                    <label for="checkbox_custom_5" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_6" class="checkbox_custom">
+                    <label for="checkbox_custom_6" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_7" class="checkbox_custom">
+                    <label for="checkbox_custom_7" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_8" class="checkbox_custom">
+                    <label for="checkbox_custom_8" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_9" class="checkbox_custom">
+                    <label for="checkbox_custom_9" class="checkbox_label">Checkbox</label>
+                  </div>
+                </div>      
+              </div>
+              
+      
+            </div>
+
+            <div class="catalog_checkbox">
+              <div class="catalog_cat_box_head">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Цоколь</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                <div class="checkbox_wrapper" id="checkbox_wrapper">
+                  <div class="checkbox_search">
+                    <input type="search" name="search_cat" class="search_cat" placeholder="Поиск по списку">
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom" class="checkbox_custom">
+                    <label for="checkbox_custom" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_1" class="checkbox_custom">
+                    <label for="checkbox_custom_1" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_2" class="checkbox_custom">
+                    <label for="checkbox_custom_2" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_3" class="checkbox_custom">
+                    <label for="checkbox_custom_3" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_4" class="checkbox_custom">
+                    <label for="checkbox_custom_4" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_5" class="checkbox_custom">
+                    <label for="checkbox_custom_5" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_6" class="checkbox_custom">
+                    <label for="checkbox_custom_6" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_7" class="checkbox_custom">
+                    <label for="checkbox_custom_7" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_8" class="checkbox_custom">
+                    <label for="checkbox_custom_8" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_9" class="checkbox_custom">
+                    <label for="checkbox_custom_9" class="checkbox_label">Checkbox</label>
+                  </div>
+                </div>      
+              </div>
+              
+      
+            </div>
+
+            <div class="catalog_checkbox">
+              <div class="catalog_cat_box_head">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Форма лампочки</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                <div class="checkbox_wrapper" id="checkbox_wrapper">
+                  <div class="checkbox_search">
+                    <input type="search" name="search_cat" class="search_cat" placeholder="Поиск по списку">
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom" class="checkbox_custom">
+                    <label for="checkbox_custom" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_1" class="checkbox_custom">
+                    <label for="checkbox_custom_1" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_2" class="checkbox_custom">
+                    <label for="checkbox_custom_2" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_3" class="checkbox_custom">
+                    <label for="checkbox_custom_3" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_4" class="checkbox_custom">
+                    <label for="checkbox_custom_4" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_5" class="checkbox_custom">
+                    <label for="checkbox_custom_5" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_6" class="checkbox_custom">
+                    <label for="checkbox_custom_6" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_7" class="checkbox_custom">
+                    <label for="checkbox_custom_7" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_8" class="checkbox_custom">
+                    <label for="checkbox_custom_8" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_9" class="checkbox_custom">
+                    <label for="checkbox_custom_9" class="checkbox_label">Checkbox</label>
+                  </div>
+                </div>      
+              </div>
+              
+      
+            </div>
+
+            <div class="catalog_checkbox">
+              <div class="catalog_cat_box_head">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Количество ламп</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                <div class="checkbox_wrapper" id="checkbox_wrapper">
+                  <div class="checkbox_search">
+                    <input type="search" name="search_cat" class="search_cat" placeholder="Поиск по списку">
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom" class="checkbox_custom">
+                    <label for="checkbox_custom" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_1" class="checkbox_custom">
+                    <label for="checkbox_custom_1" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_2" class="checkbox_custom">
+                    <label for="checkbox_custom_2" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_3" class="checkbox_custom">
+                    <label for="checkbox_custom_3" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_4" class="checkbox_custom">
+                    <label for="checkbox_custom_4" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_5" class="checkbox_custom">
+                    <label for="checkbox_custom_5" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_6" class="checkbox_custom">
+                    <label for="checkbox_custom_6" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_7" class="checkbox_custom">
+                    <label for="checkbox_custom_7" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_8" class="checkbox_custom">
+                    <label for="checkbox_custom_8" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_9" class="checkbox_custom">
+                    <label for="checkbox_custom_9" class="checkbox_label">Checkbox</label>
+                  </div>
+                </div>      
+              </div>
+              
+      
+            </div>
+
+            <div class="catalog_checkbox">
+              <div class="catalog_cat_box_head">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Бренд</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                <div class="checkbox_wrapper" id="checkbox_wrapper">
+                  <div class="checkbox_search">
+                    <input type="search" name="search_cat" class="search_cat" placeholder="Поиск по списку">
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom" class="checkbox_custom">
+                    <label for="checkbox_custom" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_1" class="checkbox_custom">
+                    <label for="checkbox_custom_1" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_2" class="checkbox_custom">
+                    <label for="checkbox_custom_2" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_3" class="checkbox_custom">
+                    <label for="checkbox_custom_3" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_4" class="checkbox_custom">
+                    <label for="checkbox_custom_4" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_5" class="checkbox_custom">
+                    <label for="checkbox_custom_5" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_6" class="checkbox_custom">
+                    <label for="checkbox_custom_6" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_7" class="checkbox_custom">
+                    <label for="checkbox_custom_7" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_8" class="checkbox_custom">
+                    <label for="checkbox_custom_8" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_9" class="checkbox_custom">
+                    <label for="checkbox_custom_9" class="checkbox_label">Checkbox</label>
+                  </div>
+                </div>      
+              </div>
+              
+      
+            </div>
+
+            <div class="catalog_checkbox">
+              <div class="catalog_cat_box_head">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Страна производства</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                <div class="checkbox_wrapper" id="checkbox_wrapper">
+                  <div class="checkbox_search">
+                    <input type="search" name="search_cat" class="search_cat" placeholder="Поиск по списку">
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom" class="checkbox_custom">
+                    <label for="checkbox_custom" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_1" class="checkbox_custom">
+                    <label for="checkbox_custom_1" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_2" class="checkbox_custom">
+                    <label for="checkbox_custom_2" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_3" class="checkbox_custom">
+                    <label for="checkbox_custom_3" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_4" class="checkbox_custom">
+                    <label for="checkbox_custom_4" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_5" class="checkbox_custom">
+                    <label for="checkbox_custom_5" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_6" class="checkbox_custom">
+                    <label for="checkbox_custom_6" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_7" class="checkbox_custom">
+                    <label for="checkbox_custom_7" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_8" class="checkbox_custom">
+                    <label for="checkbox_custom_8" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_9" class="checkbox_custom">
+                    <label for="checkbox_custom_9" class="checkbox_label">Checkbox</label>
+                  </div>
+                </div>      
+              </div>
+              
+      
+            </div>
+
+            <div class="catalog_checkbox">
+              <div class="catalog_cat_box_head">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Напряжение (В)</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                <div class="checkbox_wrapper" id="checkbox_wrapper">
+                  <div class="checkbox_search">
+                    <input type="search" name="search_cat" class="search_cat" placeholder="Поиск по списку">
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom" class="checkbox_custom">
+                    <label for="checkbox_custom" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_1" class="checkbox_custom">
+                    <label for="checkbox_custom_1" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_2" class="checkbox_custom">
+                    <label for="checkbox_custom_2" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_3" class="checkbox_custom">
+                    <label for="checkbox_custom_3" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_4" class="checkbox_custom">
+                    <label for="checkbox_custom_4" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_5" class="checkbox_custom">
+                    <label for="checkbox_custom_5" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_6" class="checkbox_custom">
+                    <label for="checkbox_custom_6" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_7" class="checkbox_custom">
+                    <label for="checkbox_custom_7" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_8" class="checkbox_custom">
+                    <label for="checkbox_custom_8" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_9" class="checkbox_custom">
+                    <label for="checkbox_custom_9" class="checkbox_label">Checkbox</label>
+                  </div>
+                </div>      
+              </div>
+              
+      
+            </div>
+
+            <div class="catalog_checkbox">
+              <div class="catalog_cat_box_head">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Защита IP</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                <div class="checkbox_wrapper" id="checkbox_wrapper">
+                  <div class="checkbox_search">
+                    <input type="search" name="search_cat" class="search_cat" placeholder="Поиск по списку">
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom" class="checkbox_custom">
+                    <label for="checkbox_custom" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_1" class="checkbox_custom">
+                    <label for="checkbox_custom_1" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_2" class="checkbox_custom">
+                    <label for="checkbox_custom_2" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_3" class="checkbox_custom">
+                    <label for="checkbox_custom_3" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_4" class="checkbox_custom">
+                    <label for="checkbox_custom_4" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_5" class="checkbox_custom">
+                    <label for="checkbox_custom_5" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_6" class="checkbox_custom">
+                    <label for="checkbox_custom_6" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_7" class="checkbox_custom">
+                    <label for="checkbox_custom_7" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_8" class="checkbox_custom">
+                    <label for="checkbox_custom_8" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_9" class="checkbox_custom">
+                    <label for="checkbox_custom_9" class="checkbox_label">Checkbox</label>
+                  </div>
+                </div>      
+              </div>
+              
+      
+            </div>
+
             <div class="catalog_toggle">
               <div class="catalog_cat_box_head">
-                <span class="catalog_cat_span">Toggle</span>
+                <span class="catalog_cat_span">Диммер</span>
                 <div class="toggle_wrapper">
                   <div class="toggle_container">
                     <label class="switch">
@@ -467,357 +1283,501 @@
                 </div>              
               </div>            
             </div>
+
+            <div class="catalog_toggle">
+              <div class="catalog_cat_box_head">
+                <span class="catalog_cat_span">Пульт ДУ</span>
+                <div class="toggle_wrapper">
+                  <div class="toggle_container">
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>                 
+                </div>              
+              </div>            
+            </div>
+
+            <div class="catalog_toggle">
+              <div class="catalog_cat_box_head">
+                <span class="catalog_cat_span">Наличие выключателя</span>
+                <div class="toggle_wrapper">
+                  <div class="toggle_container">
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>                 
+                </div>              
+              </div>            
+            </div>
+
+            <div class="catalog_checkbox">
+              <div class="catalog_cat_box_head">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Новинка</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                <div class="checkbox_wrapper" id="checkbox_wrapper">
+                  <div class="checkbox_search">
+                    <input type="search" name="search_cat" class="search_cat" placeholder="Поиск по списку">
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom" class="checkbox_custom">
+                    <label for="checkbox_custom" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_1" class="checkbox_custom">
+                    <label for="checkbox_custom_1" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_2" class="checkbox_custom">
+                    <label for="checkbox_custom_2" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_3" class="checkbox_custom">
+                    <label for="checkbox_custom_3" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_4" class="checkbox_custom">
+                    <label for="checkbox_custom_4" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_5" class="checkbox_custom">
+                    <label for="checkbox_custom_5" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_6" class="checkbox_custom">
+                    <label for="checkbox_custom_6" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_7" class="checkbox_custom">
+                    <label for="checkbox_custom_7" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_8" class="checkbox_custom">
+                    <label for="checkbox_custom_8" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_9" class="checkbox_custom">
+                    <label for="checkbox_custom_9" class="checkbox_label">Checkbox</label>
+                  </div>
+                </div>      
+              </div>
+              
+      
+            </div>
+
+            <div class="catalog_checkbox">
+              <div class="catalog_cat_box_head">
+                <button class="show_catalog">
+                  <span class="catalog_cat_span">Направление плафонов</span>
+                  <img src="./svg/arrow_top.svg" alt="" class="arrow_top" id="category_dropdown">
+                </button>
+                <div class="checkbox_wrapper" id="checkbox_wrapper">
+                  <div class="checkbox_search">
+                    <input type="search" name="search_cat" class="search_cat" placeholder="Поиск по списку">
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom" class="checkbox_custom">
+                    <label for="checkbox_custom" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_1" class="checkbox_custom">
+                    <label for="checkbox_custom_1" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_2" class="checkbox_custom">
+                    <label for="checkbox_custom_2" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_3" class="checkbox_custom">
+                    <label for="checkbox_custom_3" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_4" class="checkbox_custom">
+                    <label for="checkbox_custom_4" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_5" class="checkbox_custom">
+                    <label for="checkbox_custom_5" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_6" class="checkbox_custom">
+                    <label for="checkbox_custom_6" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_7" class="checkbox_custom">
+                    <label for="checkbox_custom_7" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_8" class="checkbox_custom">
+                    <label for="checkbox_custom_8" class="checkbox_label">Checkbox</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" name="" id="checkbox_custom_9" class="checkbox_custom">
+                    <label for="checkbox_custom_9" class="checkbox_label">Checkbox</label>
+                  </div>
+                </div>      
+              </div>
+              
+      
+            </div>
+            
             <button class="clear">
-              <span class="catalog_clear_button">Clear</span>
+              <a href="" class="catalog_clear_button">Clear</a>
             </button>
           </div>
         </div>
         
         <div class="catalog_box_wrapper" id="catalog_box_wrapper">
-          <div class="card_container">     
-            <div class="card_item">
-              <span class="small_span sale">Скидка</span>
-              <span class="small_span">Новинка</span>
-              <div class="card_img_group">
-                <div class="card_img_slider">
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
+          <div class="catalog_wrapper">
+            <div class="card_container">     
+              <div class="card_item">
+                <span class="small_span sale">Скидка</span>
+                <span class="small_span">Новинка</span>
+                <div class="card_img_group">
+                  <div class="card_img_slider">
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>            
                   </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                  <div class="slider_dots"></div>
+                  <div class="btn_group">
+                    <a href="" class="btn_small btn_small_card">
+                      <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                    </a>
+                    <a href="" class="btn_small btn_small_card">
+                      <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                    </a>
                   </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>            
                 </div>
-                <div class="slider_dots"></div>
-                <div class="btn_group">
-                  <a href="" class="btn_small btn_small_card">
-                    <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                  </a>
-                  <a href="" class="btn_small btn_small_card">
-                    <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                  </a>
+      
+                <a class="card_desc" href="./shop_item.html">Подвесная люстра Osgona Tesoro 710572</a>
+                <div class="card_price">
+                  <div class="price_container">
+                    <span class="fake_price">1 113 200 ₽</span>
+                    <span class="real_price">1 000 000 ₽</span>
+                  </div>
+                  <a href="" class="order">+</a>
                 </div>
               </div>
-    
-              <a class="card_desc" href="./shop_item.html">Подвесная люстра Osgona Tesoro 710572</a>
-              <div class="card_price">
-                <div class="price_container">
-                  <span class="fake_price">1 113 200 ₽</span>
-                  <span class="real_price">1 000 000 ₽</span>
+            </div>
+            <div class="card_container">     
+              <div class="card_item">
+                <span class="small_span sale">Скидка</span>
+                <span class="small_span">Новинка</span>
+                <div class="card_img_group">
+                  <div class="card_img_slider">
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>            
+                  </div>
+                  <div class="slider_dots"></div>
+                  <div class="btn_group">
+                    <a href="" class="btn_small btn_small_card">
+                      <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                    </a>
+                    <a href="" class="btn_small btn_small_card">
+                      <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                    </a>
+                  </div>
                 </div>
-                <a href="" class="order">+</a>
+      
+                <a class="card_desc" href="./shop_item.html">Подвесная люстра Osgona Tesoro 710572</a>
+                <div class="card_price">
+                  <div class="price_container">
+                    <span class="fake_price">1 113 200 ₽</span>
+                    <span class="real_price">1 000 000 ₽</span>
+                  </div>
+                  <a href="" class="order">+</a>
+                </div>
+              </div>
+            </div>
+            <div class="card_container">     
+              <div class="card_item">
+                <span class="small_span sale">Скидка</span>
+                <span class="small_span">Новинка</span>
+                <div class="card_img_group">
+                  <div class="card_img_slider">
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>            
+                  </div>
+                  <div class="slider_dots"></div>
+                  <div class="btn_group">
+                    <a href="" class="btn_small btn_small_card">
+                      <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                    </a>
+                    <a href="" class="btn_small btn_small_card">
+                      <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                    </a>
+                  </div>
+                </div>
+      
+                <a class="card_desc" href="./shop_item.html">Подвесная люстра Osgona Tesoro 710572</a>
+                <div class="card_price">
+                  <div class="price_container">
+                    <span class="fake_price">1 113 200 ₽</span>
+                    <span class="real_price">1 000 000 ₽</span>
+                  </div>
+                  <a href="" class="order">+</a>
+                </div>
+              </div>
+            </div>
+            <div class="card_container">     
+              <div class="card_item">
+                <span class="small_span sale">Скидка</span>
+                <span class="small_span">Новинка</span>
+                <div class="card_img_group">
+                  <div class="card_img_slider">
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>            
+                  </div>
+                  <div class="slider_dots"></div>
+                  <div class="btn_group">
+                    <a href="" class="btn_small btn_small_card">
+                      <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                    </a>
+                    <a href="" class="btn_small btn_small_card">
+                      <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                    </a>
+                  </div>
+                </div>
+      
+                <a class="card_desc" href="./shop_item.html">Подвесная люстра Osgona Tesoro 710572</a>
+                <div class="card_price">
+                  <div class="price_container">
+                    <span class="fake_price">1 113 200 ₽</span>
+                    <span class="real_price">1 000 000 ₽</span>
+                  </div>
+                  <a href="" class="order">+</a>
+                </div>
+              </div>
+            </div>
+            <div class="card_container">     
+              <div class="card_item">
+                <span class="small_span sale">Скидка</span>
+                <span class="small_span">Новинка</span>
+                <div class="card_img_group">
+                  <div class="card_img_slider">
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>            
+                  </div>
+                  <div class="slider_dots"></div>
+                  <div class="btn_group">
+                    <a href="" class="btn_small btn_small_card">
+                      <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                    </a>
+                    <a href="" class="btn_small btn_small_card">
+                      <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                    </a>
+                  </div>
+                </div>
+      
+                <a class="card_desc" href="./shop_item.html">Подвесная люстра Osgona Tesoro 710572</a>
+                <div class="card_price">
+                  <div class="price_container">
+                    <span class="fake_price">1 113 200 ₽</span>
+                    <span class="real_price">1 000 000 ₽</span>
+                  </div>
+                  <a href="" class="order">+</a>
+                </div>
+              </div>
+            </div>
+            <div class="card_container">     
+              <div class="card_item">
+                <span class="small_span sale">Скидка</span>
+                <span class="small_span">Новинка</span>
+                <div class="card_img_group">
+                  <div class="card_img_slider">
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>            
+                  </div>
+                  <div class="slider_dots"></div>
+                  <div class="btn_group">
+                    <a href="" class="btn_small btn_small_card">
+                      <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                    </a>
+                    <a href="" class="btn_small btn_small_card">
+                      <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                    </a>
+                  </div>
+                </div>
+      
+                <a class="card_desc" href="./shop_item.html">Подвесная люстра Osgona Tesoro 710572</a>
+                <div class="card_price">
+                  <div class="price_container">
+                    <span class="fake_price">1 113 200 ₽</span>
+                    <span class="real_price">1 000 000 ₽</span>
+                  </div>
+                  <a href="" class="order">+</a>
+                </div>
+              </div>
+            </div>
+            <div class="card_container">     
+              <div class="card_item">
+                <span class="small_span sale">Скидка</span>
+                <span class="small_span">Новинка</span>
+                <div class="card_img_group">
+                  <div class="card_img_slider">
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>            
+                  </div>
+                  <div class="slider_dots"></div>
+                  <div class="btn_group">
+                    <a href="" class="btn_small btn_small_card">
+                      <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                    </a>
+                    <a href="" class="btn_small btn_small_card">
+                      <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                    </a>
+                  </div>
+                </div>
+      
+                <a class="card_desc" href="./shop_item.html">Подвесная люстра Osgona Tesoro 710572</a>
+                <div class="card_price">
+                  <div class="price_container">
+                    <span class="fake_price">1 113 200 ₽</span>
+                    <span class="real_price">1 000 000 ₽</span>
+                  </div>
+                  <a href="" class="order">+</a>
+                </div>
+              </div>
+            </div>
+            <div class="card_container">     
+              <div class="card_item">
+                <span class="small_span sale">Скидка</span>
+                <span class="small_span">Новинка</span>
+                <div class="card_img_group">
+                  <div class="card_img_slider">
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card_another.png" alt="" class="card_img">
+                    </div>
+                    <div class="card_slide">
+                      <img src="./images/lamp_card.png" alt="" class="card_img">
+                    </div>            
+                  </div>
+                  <div class="slider_dots"></div>
+                  <div class="btn_group">
+                    <a href="" class="btn_small btn_small_card">
+                      <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
+                    </a>
+                    <a href="" class="btn_small btn_small_card">
+                      <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
+                    </a>
+                  </div>
+                </div>
+      
+                <a class="card_desc" href="./shop_item.html">Подвесная люстра Osgona Tesoro 710572</a>
+                <div class="card_price">
+                  <div class="price_container">
+                    <span class="fake_price">1 113 200 ₽</span>
+                    <span class="real_price">1 000 000 ₽</span>
+                  </div>
+                  <a href="" class="order">+</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card_container">     
-            <div class="card_item">
-              <span class="small_span sale">Скидка</span>
-              <span class="small_span">Новинка</span>
-              <div class="card_img_group">
-                <div class="card_img_slider">
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>            
-                </div>
-                <div class="slider_dots"></div>
-                <div class="btn_group">
-                  <a href="" class="btn_small btn_small_card">
-                    <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                  </a>
-                  <a href="" class="btn_small btn_small_card">
-                    <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                  </a>
-                </div>
-              </div>
-    
-              <a class="card_desc" href="./shop_item.html">Подвесная люстра Osgona Tesoro 710572</a>
-              <div class="card_price">
-                <div class="price_container">
-                  <span class="fake_price">1 113 200 ₽</span>
-                  <span class="real_price">1 000 000 ₽</span>
-                </div>
-                <a href="" class="order">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="card_container">     
-            <div class="card_item">
-              <span class="small_span sale">Скидка</span>
-              <span class="small_span">Новинка</span>
-              <div class="card_img_group">
-                <div class="card_img_slider">
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>            
-                </div>
-                <div class="slider_dots"></div>
-                <div class="btn_group">
-                  <a href="" class="btn_small btn_small_card">
-                    <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                  </a>
-                  <a href="" class="btn_small btn_small_card">
-                    <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                  </a>
-                </div>
-              </div>
-    
-              <a class="card_desc" href="./shop_item.html">Подвесная люстра Osgona Tesoro 710572</a>
-              <div class="card_price">
-                <div class="price_container">
-                  <span class="fake_price">1 113 200 ₽</span>
-                  <span class="real_price">1 000 000 ₽</span>
-                </div>
-                <a href="" class="order">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="card_container">     
-            <div class="card_item">
-              <span class="small_span sale">Скидка</span>
-              <span class="small_span">Новинка</span>
-              <div class="card_img_group">
-                <div class="card_img_slider">
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>            
-                </div>
-                <div class="slider_dots"></div>
-                <div class="btn_group">
-                  <a href="" class="btn_small btn_small_card">
-                    <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                  </a>
-                  <a href="" class="btn_small btn_small_card">
-                    <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                  </a>
-                </div>
-              </div>
-    
-              <a class="card_desc" href="./shop_item.html">Подвесная люстра Osgona Tesoro 710572</a>
-              <div class="card_price">
-                <div class="price_container">
-                  <span class="fake_price">1 113 200 ₽</span>
-                  <span class="real_price">1 000 000 ₽</span>
-                </div>
-                <a href="" class="order">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="card_container">     
-            <div class="card_item">
-              <span class="small_span sale">Скидка</span>
-              <span class="small_span">Новинка</span>
-              <div class="card_img_group">
-                <div class="card_img_slider">
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>            
-                </div>
-                <div class="slider_dots"></div>
-                <div class="btn_group">
-                  <a href="" class="btn_small btn_small_card">
-                    <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                  </a>
-                  <a href="" class="btn_small btn_small_card">
-                    <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                  </a>
-                </div>
-              </div>
-    
-              <a class="card_desc" href="./shop_item.html">Подвесная люстра Osgona Tesoro 710572</a>
-              <div class="card_price">
-                <div class="price_container">
-                  <span class="fake_price">1 113 200 ₽</span>
-                  <span class="real_price">1 000 000 ₽</span>
-                </div>
-                <a href="" class="order">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="card_container">     
-            <div class="card_item">
-              <span class="small_span sale">Скидка</span>
-              <span class="small_span">Новинка</span>
-              <div class="card_img_group">
-                <div class="card_img_slider">
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>            
-                </div>
-                <div class="slider_dots"></div>
-                <div class="btn_group">
-                  <a href="" class="btn_small btn_small_card">
-                    <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                  </a>
-                  <a href="" class="btn_small btn_small_card">
-                    <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                  </a>
-                </div>
-              </div>
-    
-              <a class="card_desc" href="./shop_item.html">Подвесная люстра Osgona Tesoro 710572</a>
-              <div class="card_price">
-                <div class="price_container">
-                  <span class="fake_price">1 113 200 ₽</span>
-                  <span class="real_price">1 000 000 ₽</span>
-                </div>
-                <a href="" class="order">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="card_container">     
-            <div class="card_item">
-              <span class="small_span sale">Скидка</span>
-              <span class="small_span">Новинка</span>
-              <div class="card_img_group">
-                <div class="card_img_slider">
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>            
-                </div>
-                <div class="slider_dots"></div>
-                <div class="btn_group">
-                  <a href="" class="btn_small btn_small_card">
-                    <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                  </a>
-                  <a href="" class="btn_small btn_small_card">
-                    <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                  </a>
-                </div>
-              </div>
-    
-              <a class="card_desc" href="./shop_item.html">Подвесная люстра Osgona Tesoro 710572</a>
-              <div class="card_price">
-                <div class="price_container">
-                  <span class="fake_price">1 113 200 ₽</span>
-                  <span class="real_price">1 000 000 ₽</span>
-                </div>
-                <a href="" class="order">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="card_container">     
-            <div class="card_item">
-              <span class="small_span sale">Скидка</span>
-              <span class="small_span">Новинка</span>
-              <div class="card_img_group">
-                <div class="card_img_slider">
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card_another.png" alt="" class="card_img">
-                  </div>
-                  <div class="card_slide">
-                    <img src="./images/lamp_card.png" alt="" class="card_img">
-                  </div>            
-                </div>
-                <div class="slider_dots"></div>
-                <div class="btn_group">
-                  <a href="" class="btn_small btn_small_card">
-                    <img src="./svg/comparation.svg" alt="" class="btn_small_img btn_small_card_img">
-                  </a>
-                  <a href="" class="btn_small btn_small_card">
-                    <img src="./svg/heart.svg" alt="" class="btn_small_img btn_small_card_img">
-                  </a>
-                </div>
-              </div>
-    
-              <a class="card_desc" href="./shop_item.html">Подвесная люстра Osgona Tesoro 710572</a>
-              <div class="card_price">
-                <div class="price_container">
-                  <span class="fake_price">1 113 200 ₽</span>
-                  <span class="real_price">1 000 000 ₽</span>
-                </div>
-                <a href="" class="order">+</a>
-              </div>
-            </div>
-          </div>
+          
         </div>
 
         <div class="catalog_row_wrapper" id="catalog_row_wrapper">

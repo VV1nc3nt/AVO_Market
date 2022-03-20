@@ -16,24 +16,25 @@ window.onclick = function (event) {
   }
 }
 
-function showDropdownInput() {
-  document.getElementById("price_input").classList.toggle("price_input_show");
-  let arrowSvg = document.getElementById("category_dropdown");
-  if (arrowSvg.getAttribute("src") === "./svg/arrow_bot.svg") {
-    arrowSvg.setAttribute("src", "./svg/arrow_top.svg");
-  } else {
-    arrowSvg.setAttribute("src", "./svg/arrow_bot.svg");
-  }
-}
 
-function showDropdownCheckbox() {
-  document.getElementById("checkbox_wrapper").classList.toggle("checkbox_wrapper_show"); 
-  let arrowSvg = document.getElementById("checkbox_dropdown");
-  if (arrowSvg.getAttribute("src") === "./svg/arrow_bot.svg") {
-    arrowSvg.setAttribute("src", "./svg/arrow_top.svg");
-  } else {
-    arrowSvg.setAttribute("src", "./svg/arrow_bot.svg");
-  }
+const dropdown = document.getElementsByClassName("show_catalog");
+
+for (let i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("price_input_show");
+    var dropdownContent = this.nextElementSibling;
+    let arrow = dropdown[i].children[1].getAttribute('src');
+    if (arrow === "./svg/arrow_bot.svg") {
+      dropdown[i].children[1].setAttribute("src", "./svg/arrow_top.svg");
+    } else {
+      dropdown[i].children[1].setAttribute("src", "./svg/arrow_bot.svg");
+    }
+    if (dropdownContent.style.display === "flex") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "flex";
+    }
+  });
 }
 
 function boxToRow() {
@@ -54,7 +55,7 @@ function rowToBox() {
   let rowButton = document.getElementById("sort_row_svg");
   row.style.display = "none";
   rowButton.style.stroke = "#E6E6E6";
-  box.style.display = "flex";
+  box.style.display = "block";
   boxButton.style.stroke = "#374957";
 }
 
