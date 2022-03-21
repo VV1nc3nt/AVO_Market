@@ -331,7 +331,7 @@ textarea:-moz-placeholder { /* Firefox 18- */
   background: #ffffff;
   padding: 32px 24px 24px;
   width: 512px;
-  height: 385px; 
+  height: 395px; 
   border-radius: 10px;
   border: 1px solid #F8F8F8;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
@@ -344,10 +344,6 @@ textarea:-moz-placeholder { /* Firefox 18- */
 .bubble_block:hover .bubble_box {
   display: flex;
 }
-
-/* .comparation_block:hover .btn_box {
-  border: 1px solid #FFA500;
-} */
 
 .bubble_box::after {
   content: '';
@@ -366,10 +362,6 @@ textarea:-moz-placeholder { /* Firefox 18- */
 .bubble_content {
   overflow: scroll;  
   border-bottom: 1px solid #EAEAEA;
-}
-
-.bubble_lines {
-  height: 200px;
 }
 
 .bubble_line {
@@ -515,25 +507,86 @@ textarea:-moz-placeholder { /* Firefox 18- */
   position: absolute;
   background-color: #ffffff;
   width: 1392px;
+  height: 920px;
   display: flex;
   border: 1px solid rgba(55, 73, 87, 0.06);
   border-radius: 0 0 8px 8px;
-  overflow: hidden
+  overflow: hidden;
+}
+
+.tabs-menu {
+  font-size: 0;
+  max-width: 1392px;
+}
+
+.tabs-menu>input[type="radio"] {
+  display: none;
+}
+
+.tabs-menu>div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+  padding: 48px 24px;
+  font-size: 16px;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#tab-btn-menu-1:checked~#content-menu-1,
+#tab-btn-menu-2:checked~#content-menu-2,
+#tab-btn-menu-3:checked~#content-menu-3,
+#tab-btn-menu-4:checked~#content-menu-4 {
+  display: flex;
+}
+
+.tabs-menu>label {
+  width: 216px;
+  display: block;
+  text-align: center;
+  user-select: none;
+  background-color: #ffffff;
+  border: 1px solid rgba(55, 73, 87, 0.06);
+  padding: 32px 8px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 16px;
+  color: #374957;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+}
+
+.tabs-menu>label:not(:first-of-type) {
+  border-left: none;
+}
+
+.tabs-menu>input[type="radio"]:checked+label {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+  border-right: 4px solid #FFA500;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
 }
 
 .menu_sections {
   display: flex;
   flex-direction: column;
-
   width: 216px;
+  align-items: flex-start;
 }
 
 .menu_lines {
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
   width: 1176px;
+  height: 920px;
   padding: 32px;
   border: 1px solid rgba(55, 73, 87, 0.06);
+  position: absolute;
+  left: 216px;
 }
 
 .menu_line {
@@ -565,7 +618,6 @@ textarea:-moz-placeholder { /* Firefox 18- */
   line-height: 17px;
   color: #374957;
   cursor: pointer;
-
   width: 215px;
   padding: 24px 48px;
   border-bottom: 1px solid rgba(55, 73, 87, 0.06);
