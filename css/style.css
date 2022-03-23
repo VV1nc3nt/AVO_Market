@@ -2903,6 +2903,7 @@ input:checked + .slider:before {
 
 .catalog_row_img {
   height: 120px;
+  width: 152px;
 }
 
 .catalog_row_slider .slick-track {
