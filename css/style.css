@@ -4961,3 +4961,22 @@ input::-webkit-inner-spin-button {
 input[type='number'] {
     -moz-appearance: textfield;
 }
+
+.breadcrumbs_ul {
+  display: flex;
+}
+
+.breadcrumb_li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb_li + .breadcrumb_li::before {
+  display: inline-block;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 16px;
+  color: #6c757d;
+  content: url("../svg/arrow-small-right.svg");
+}
