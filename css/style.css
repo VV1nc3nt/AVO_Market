@@ -527,7 +527,7 @@ textarea:-moz-placeholder { /* Firefox 18- */
   /* скрыть контент по умолчанию */
   display: none;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
-  padding: 48px 24px;
+  padding: 36px;
   font-size: 16px;
 }
 
@@ -580,7 +580,7 @@ textarea:-moz-placeholder { /* Firefox 18- */
 .menu_lines {
   display: flex;
   flex-shrink: 0;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 1176px;
   height: 920px;
   padding: 32px;
@@ -589,25 +589,18 @@ textarea:-moz-placeholder { /* Firefox 18- */
   left: 216px;
 }
 
-.menu_line {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.menu_line:nth-child(n + 2) {
-  margin-top: 40px;
-}
-
 .menu_box {
   display: flex;
   flex-direction: column;
-
-  width: 250px;
+  width: 240px;
 }
 
 .menu_box:nth-child(n + 2) {
-  margin-top: 24px;
+  margin-left: 40px;
+}
+
+.menu_box:nth-child(5) {
+  margin-left: 0;
 }
 
 .menu_section {
@@ -640,6 +633,10 @@ textarea:-moz-placeholder { /* Firefox 18- */
   font-style: normal;
   line-height: 17px;
   color: #374957;
+}
+
+.menu_header:nth-child(n + 2) {
+  margin-top: 24px;
 }
 
 .menu_header:hover {
