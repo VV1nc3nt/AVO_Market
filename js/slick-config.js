@@ -43,5 +43,9 @@ $(document).ready(function(){
     slidesToShow: 5,
     asNavFor: '.item_top_slider_big'
   });
+  $('.catalog_row_slider').slick({
+    arrows: false,
+    dots: true,
+    draggable: false
+  });
 });
-	

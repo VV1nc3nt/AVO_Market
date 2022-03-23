@@ -2828,6 +2828,7 @@ input:checked + .slider:before {
   font-style: normal;
   line-height: 16px;
   color: #374957;
+  text-decoration: none;
 }
 
 .catalog_box_sort_li:nth-child(n + 2) {
@@ -2903,6 +2904,46 @@ input:checked + .slider:before {
 .catalog_row_img {
   height: 120px;
 }
+
+.catalog_row_slider .slick-track {
+  display: flex;
+}
+
+.catalog_row_slider .slick-list {
+  overflow: hidden;
+  width: 152px;
+}
+
+.catalog_row_slider .slick-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 213px;
+  width: 152px;
+}
+
+.catalog_row_slider .slick-dots li{
+  list-style: none;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+/* Элемент точки */
+.catalog_row_slider .slick-dots li button{
+  font-size: 0;
+  height: 2px;
+  width: 22px;
+  border: none;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* Активная точка */
+.catalog_row_slider .slick-dots li.slick-active button{
+  background-color: #FFA500;
+  cursor: pointer;
+}
+
 
 .card_row_ul {
   display: flex;
