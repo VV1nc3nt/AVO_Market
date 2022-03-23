@@ -4618,6 +4618,7 @@ input:checked + .slider:before {
 }
 
 .all_order_info {
+  display: none;
   width: 1392px;
   margin: 0 auto 112px;
   padding: 32px;
